@@ -1,0 +1,1627 @@
+<html lang="en" id="html">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="One portal for all online Aadhaar Services.">
+  <link rel="stylesheet" href="/resources/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    rel="stylesheet">
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script src="/resources/js/script.js"></script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QLL8FM617E"></script>
+  <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-QLL8FM617E")</script>
+  <link rel="manifest" href="/manifest.json">
+  <title>myAadhaar - Unique Identification Authority of India | Government of India</title>
+  <style>
+    body {
+      padding-right: 0 !important
+    }
+  </style>
+  <script defer="defer" src="/static/js/main.50998dca.js"></script>
+  <link href="/static/css/main.187761d5.css" rel="stylesheet">
+  <style>
+    .gradient-button-container {
+
+      display: inline-block;
+
+      height: 40px;
+
+
+
+
+
+    }
+
+
+
+    .gradient-button {
+
+      height: 100%;
+
+      width: 100%;
+
+      text-align: center;
+
+      outline: none;
+
+      transition: all 0.1s ease-in;
+
+      font-family: inherit;
+
+      cursor: pointer;
+
+    }
+
+
+
+    .filled {
+
+      border-radius: 5px;
+
+      border: none;
+
+      color: rgb(255, 255, 255);
+
+    }
+
+
+
+    .filled:enabled {
+
+      background-image: linear-gradient(to right, #020D51, #19B0DC);
+
+
+
+      /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.404); */
+
+    }
+
+
+
+    /* .gradient-button:hover:enabled {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.404);
+
+}
+
+
+
+.gradient-button:active:enabled {
+
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.404);;
+
+} */
+
+
+
+    .filled:disabled {
+
+      background-color: #B5B1B1;
+
+    }
+
+
+
+    .not-filled {
+
+      border-radius: 5px;
+
+      border-image-slice: 1;
+
+      border: 3px solid transparent;
+
+
+
+      background-color: #FFFF;
+
+      color: #086396;
+
+
+
+    }
+
+
+
+    .not-filled:enabled {
+
+      background:
+
+        linear-gradient(#FFFF, #FFFF) padding-box,
+
+        linear-gradient(to right, #020D51, #19B0DC) border-box;
+
+    }
+
+
+
+    .not-filled:disabled {
+
+      border-color: #B5B1B1;
+
+      color: #B5B1B1;
+
+    }
+  </style>
+  <style>
+    label {
+
+      -webkit-perspective: 1000px;
+
+      perspective: 1000px;
+
+      -webkit-transform-style: preserve-3d;
+
+      transform-style: preserve-3d;
+
+    }
+
+
+
+    .card {
+
+      position: relative;
+
+      height: 100%;
+
+      width: 100%;
+
+      -webkit-transform-style: preserve-3d;
+
+      transform-style: preserve-3d;
+
+      -webkit-transition: all 600ms;
+
+      transition: all 600ms;
+
+      z-index: 20;
+
+    }
+
+
+
+    .card div {
+
+      position: absolute;
+
+      height: 100%;
+
+      width: 100%;
+
+      left: 0%;
+
+      top: 0%;
+
+      text-align: center;
+
+      line-height: 200px;
+
+      -webkit-backface-visibility: hidden;
+
+      backface-visibility: hidden;
+
+      border-radius: 2px;
+
+    }
+
+
+
+    .card .back {
+
+      -webkit-transform: rotateY(180deg);
+
+      transform: rotateY(180deg);
+
+    }
+
+
+
+    input {
+
+      display: none;
+
+    }
+
+
+
+    :checked+.card {
+
+      transform: rotateY(180deg);
+
+      -webkit-transform: rotateY(180deg);
+
+    }
+  </style>
+  <style>
+    /*!
+ * 
+ *   react-simple-keyboard v3.7.116
+ *   https://github.com/hodgef/react-simple-keyboard
+ *
+ *   Copyright (c) Francisco Hodge (https://github.com/hodgef) and project contributors.
+ *
+ *   This source code is licensed under the MIT license found in the
+ *   LICENSE file in the root directory of this source tree.
+ *
+ */
+    /*!
+ * 
+ *   simple-keyboard v3.7.78
+ *   https://github.com/hodgef/simple-keyboard
+ *
+ *   Copyright (c) Francisco Hodge (https://github.com/hodgef) and project contributors.
+ *
+ *   This source code is licensed under the MIT license found in the
+ *   LICENSE file in the root directory of this source tree.
+ *
+ */
+    .hg-theme-default {
+      background-color: #ececec;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+      overflow: hidden;
+      padding: 5px;
+      touch-action: manipulation;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      width: 100%
+    }
+
+    .hg-theme-default .hg-button span {
+      pointer-events: none
+    }
+
+    .hg-theme-default button.hg-button {
+      border-width: 0;
+      font-size: inherit;
+      outline: 0
+    }
+
+    .hg-theme-default .hg-button {
+      display: inline-block;
+      flex-grow: 1
+    }
+
+    .hg-theme-default .hg-row {
+      display: flex
+    }
+
+    .hg-theme-default .hg-row:not(:last-child) {
+      margin-bottom: 5px
+    }
+
+    .hg-theme-default .hg-row .hg-button-container,
+    .hg-theme-default .hg-row .hg-button:not(:last-child) {
+      margin-right: 5px
+    }
+
+    .hg-theme-default .hg-row>div:last-child {
+      margin-right: 0
+    }
+
+    .hg-theme-default .hg-row .hg-button-container {
+      display: flex
+    }
+
+    .hg-theme-default .hg-button {
+      align-items: center;
+      background: #fff;
+      border-bottom: 1px solid #b5b5b5;
+      border-radius: 5px;
+      box-shadow: 0 0 3px -1px rgba(0, 0, 0, .3);
+      box-sizing: border-box;
+      cursor: pointer;
+      display: flex;
+      height: 40px;
+      justify-content: center;
+      padding: 5px;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    }
+
+    .hg-theme-default .hg-button.hg-standardBtn {
+      width: 20px
+    }
+
+    .hg-theme-default .hg-button.hg-activeButton {
+      background: #efefef
+    }
+
+    .hg-theme-default.hg-layout-numeric .hg-button {
+      align-items: center;
+      display: flex;
+      height: 60px;
+      justify-content: center;
+      width: 33.3%
+    }
+
+    .hg-theme-default .hg-button.hg-button-numpadadd,
+    .hg-theme-default .hg-button.hg-button-numpadenter {
+      height: 85px
+    }
+
+    .hg-theme-default .hg-button.hg-button-numpad0 {
+      width: 105px
+    }
+
+    .hg-theme-default .hg-button.hg-button-com {
+      max-width: 85px
+    }
+
+    .hg-theme-default .hg-button.hg-standardBtn.hg-button-at {
+      max-width: 45px
+    }
+
+    .hg-theme-default .hg-button.hg-selectedButton {
+      background: rgba(5, 25, 70, .53);
+      color: #fff
+    }
+
+    .hg-theme-default .hg-button.hg-standardBtn[data-skbtn=".com"] {
+      max-width: 82px
+    }
+
+    .hg-theme-default .hg-button.hg-standardBtn[data-skbtn="@"] {
+      max-width: 60px
+    }
+
+    .hg-candidate-box {
+      background: #ececec;
+      border-bottom: 2px solid #b5b5b5;
+      border-radius: 5px;
+      display: inline-flex;
+      margin-top: -10px;
+      position: absolute;
+      transform: translateY(-100%);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none
+    }
+
+    ul.hg-candidate-box-list {
+      display: flex;
+      flex: 1;
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    li.hg-candidate-box-list-item {
+      align-items: center;
+      display: flex;
+      height: 40px;
+      justify-content: center;
+      width: 40px
+    }
+
+    li.hg-candidate-box-list-item:hover {
+      background: rgba(0, 0, 0, .03);
+      cursor: pointer
+    }
+
+    li.hg-candidate-box-list-item:active {
+      background: rgba(0, 0, 0, .1)
+    }
+
+    .hg-candidate-box-prev:before {
+      content: "◄"
+    }
+
+    .hg-candidate-box-next:before {
+      content: "►"
+    }
+
+    .hg-candidate-box-next,
+    .hg-candidate-box-prev {
+      align-items: center;
+      color: #969696;
+      cursor: pointer;
+      display: flex;
+      padding: 0 10px
+    }
+
+    .hg-candidate-box-next {
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px
+    }
+
+    .hg-candidate-box-prev {
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px
+    }
+
+    .hg-candidate-box-btn-active {
+      color: #444
+    }
+  </style>
+  <style>
+    .hg-theme-default {
+
+      background-color: white;
+
+      border-radius: 5px;
+
+      box-sizing: border-box;
+
+      font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue,
+
+        Helvetica, Arial, Lucida Grande, sans-serif;
+
+      overflow: hidden;
+
+      padding: 5px;
+
+      touch-action: manipulation;
+
+      -webkit-user-select: none;
+
+      -moz-user-select: none;
+
+      -ms-user-select: none;
+
+      user-select: none;
+
+      width: 100%;
+
+      border: solid 1px grey;
+
+      margin-top: 5px;
+
+    }
+
+
+
+    @media screen and (max-width: 460px) {
+
+      .hg-theme-default {
+
+        overflow: scroll;
+
+      }
+
+    }
+
+    .hg-theme-default .hg-button span {
+
+      pointer-events: none;
+
+    }
+
+    .hg-theme-default button.hg-button {
+
+      border-width: 0;
+
+      font-size: inherit;
+
+      outline: 0;
+
+    }
+
+    .hg-theme-default .hg-button {
+
+      display: inline-block;
+
+      flex-grow: 1;
+
+    }
+
+    .hg-theme-default .hg-row {
+
+      display: flex;
+
+    }
+
+    .hg-theme-default .hg-row:not(:last-child) {
+
+      margin-bottom: 5px;
+
+    }
+
+    .hg-theme-default .hg-row .hg-button:not(:last-child) {
+
+      margin-right: 5px;
+
+    }
+
+    .hg-theme-default .hg-row .hg-button-container {
+
+      margin-right: 5px;
+
+    }
+
+    .hg-theme-default .hg-row>div:last-child {
+
+      margin-right: 0;
+
+    }
+
+    .hg-theme-default .hg-row .hg-button-container {
+
+      display: flex;
+
+    }
+
+    .hg-theme-default .hg-button {
+
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+      align-items: center;
+
+      /* background: #086396; */
+
+      border-bottom: 1px solid #b5b5b5;
+
+      border-radius: 6px;
+
+      border: 2px solid #086396;
+
+      box-shadow: 0 0 3px -1px rgba(0, 0, 0, 0.3);
+
+      box-sizing: border-box;
+
+      cursor: pointer;
+
+      display: flex;
+
+      height: 40px;
+
+      justify-content: center;
+
+      padding: 5px;
+
+      color: #086396;
+
+    }
+
+    .hg-theme-default .hg-button:hover {
+
+      background: #086396;
+
+      color: #fff;
+
+    }
+
+    .hg-theme-default .hg-button.hg-standardBtn {
+
+      width: 20px;
+
+    }
+
+    .hg-theme-default .hg-button.hg-activeButton {
+
+      background: #379cd6;
+
+    }
+
+    .hg-theme-default.hg-layout-numeric .hg-button {
+
+      align-items: center;
+
+      display: flex;
+
+      height: 60px;
+
+      justify-content: center;
+
+      width: 33.3%;
+
+    }
+
+    .hg-theme-default .hg-button.hg-button-numpadadd,
+
+    .hg-theme-default .hg-button.hg-button-numpadenter {
+
+      height: 85px;
+
+    }
+
+    .hg-theme-default .hg-button.hg-button-numpad0 {
+
+      width: 105px;
+
+    }
+
+    .hg-theme-default .hg-button.hg-button-com {
+
+      max-width: 85px;
+
+    }
+
+    .hg-theme-default .hg-button.hg-standardBtn.hg-button-at {
+
+      max-width: 45px;
+
+    }
+
+    .hg-theme-default .hg-button.hg-selectedButton {
+
+      background: rgba(5, 25, 70, 0.53);
+
+      color: #fff;
+
+    }
+
+    .hg-theme-default .hg-button.hg-standardBtn[data-skbtn=".com"] {
+
+      max-width: 82px;
+
+    }
+
+    .hg-theme-default .hg-button.hg-standardBtn[data-skbtn="@"] {
+
+      max-width: 60px;
+
+    }
+
+    .hg-candidate-box {
+
+      background: #ececec;
+
+      border-bottom: 2px solid #b5b5b5;
+
+      border-radius: 5px;
+
+      display: inline-flex;
+
+      margin-top: -10px;
+
+      max-width: 272px;
+
+      position: absolute;
+
+      transform: translateY(-100%);
+
+      -webkit-user-select: none;
+
+      -moz-user-select: none;
+
+      -ms-user-select: none;
+
+      user-select: none;
+
+    }
+
+    ul.hg-candidate-box-list {
+
+      display: flex;
+
+      flex: 1;
+
+      list-style: none;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+    li.hg-candidate-box-list-item {
+
+      align-items: center;
+
+      display: flex;
+
+      height: 40px;
+
+      justify-content: center;
+
+      width: 40px;
+
+    }
+
+    li.hg-candidate-box-list-item:hover {
+
+      background: rgba(0, 0, 0, 0.03);
+
+      cursor: pointer;
+
+    }
+
+    li.hg-candidate-box-list-item:active {
+
+      background: rgba(0, 0, 0, 0.1);
+
+    }
+
+    .hg-candidate-box-prev:before {
+
+      content: "◄";
+
+    }
+
+    .hg-candidate-box-next:before {
+
+      content: "►";
+
+    }
+
+    .hg-candidate-box-next,
+
+    .hg-candidate-box-prev {
+
+      align-items: center;
+
+      background: #d0d0d0;
+
+      color: #969696;
+
+      cursor: pointer;
+
+      display: flex;
+
+      padding: 0 10px;
+
+    }
+
+    .hg-candidate-box-next {
+
+      border-bottom-right-radius: 5px;
+
+      border-top-right-radius: 5px;
+
+    }
+
+    .hg-candidate-box-prev {
+
+      border-bottom-left-radius: 5px;
+
+      border-top-left-radius: 5px;
+
+    }
+
+    .hg-candidate-box-btn-active {
+
+      color: #444;
+
+    }
+  </style>
+  <style>
+    date-input-polyfill {
+      width: auto;
+      min-width: 260px;
+      height: auto;
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 5px 2px rgba(128, 128, 128, .81);
+      -moz-box-shadow: 0 0 5px 2px rgba(128, 128, 128, .81);
+      box-shadow: 0 0 5px 2px rgba(128, 128, 128, .81);
+      position: absolute;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #000
+    }
+
+    date-input-polyfill .date-select-header {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      background-color: #fff;
+      text-align: center;
+      line-height: 40px
+    }
+
+    date-input-polyfill .date-select-header .date-header-button {
+      padding: 5px 25px 5px 5px;
+      border: solid 1px #a8a3a3;
+      background-color: #fff;
+      min-width: 150px;
+      width: auto;
+      max-width: 180px;
+      height: 28px;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      line-height: 15px;
+      font-size: 13px
+    }
+
+    date-input-polyfill .date-select-header .date-header-button.active:after {
+      content: "<";
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      font-size: 18px;
+      top: 6px
+    }
+
+    date-input-polyfill .date-select-header .date-header-button.inactive:after {
+      content: "<";
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      font-size: 18px;
+      top: 6px
+    }
+
+    date-input-polyfill .day-matrix-wrapper {
+      position: relative;
+      background-color: #fff;
+      width: 100%;
+      height: auto;
+      padding: 0 10px 10px 10px;
+      box-sizing: border-box
+    }
+
+    date-input-polyfill .day-matrix-wrapper table {
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      padding: 0;
+      line-height: 24px;
+      border-collapse: separate
+    }
+
+    date-input-polyfill .day-matrix-wrapper table thead {
+      color: #b4b4b4;
+      pointer-events: none
+    }
+
+    date-input-polyfill .day-matrix-wrapper table thead th {
+      border: none;
+      padding: 0;
+      text-align: center;
+      font-size: 18px
+    }
+
+    date-input-polyfill .day-matrix-wrapper table tbody td {
+      border: solid 1px #fff;
+      padding: 0;
+      text-align: center;
+      font-size: 18px;
+      width: 30px
+    }
+
+    date-input-polyfill .day-matrix-wrapper table tbody td.current-day {
+      border: solid 1px #cce5f3;
+      background-color: #cce5f3
+    }
+
+    date-input-polyfill .day-matrix-wrapper table tbody td.current-day.disabled {
+      border: solid 1px #fff
+    }
+
+    date-input-polyfill .day-matrix-wrapper table tbody td[data-selected] {
+      font-weight: bold;
+      border: solid 1px #a2d8f6;
+      background-color: #a2d8f6
+    }
+
+    date-input-polyfill .day-matrix-wrapper table tbody td[data-selected]:hover {
+      border: solid 1px #a2d8f6;
+      background-color: #a2d8f6
+    }
+
+    date-input-polyfill .day-matrix-wrapper table tbody td.prev-month,
+    date-input-polyfill .day-matrix-wrapper table tbody td.next-month {
+      color: #d3d3d3
+    }
+
+    date-input-polyfill .day-matrix-wrapper table tbody td.prev-month:hover,
+    date-input-polyfill .day-matrix-wrapper table tbody td.next-month:hover {
+      color: #fff
+    }
+
+    date-input-polyfill .day-matrix-wrapper table tbody td.disabled {
+      background-color: gray;
+      color: #d3d3d3
+    }
+
+    date-input-polyfill .day-matrix-wrapper table tbody td.disabled:hover {
+      background-color: gray;
+      border: solid 1px #fff;
+      color: #d3d3d3
+    }
+
+    date-input-polyfill .day-matrix-wrapper table tbody td:hover {
+      cursor: pointer;
+      background-color: #d3d3d3;
+      border: solid 1px #d3d3d3
+    }
+
+    date-input-polyfill .date-select-dropdown {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 40px;
+      background-color: #fff;
+      display: none
+    }
+
+    date-input-polyfill .date-select-dropdown .select-container {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: auto;
+      padding: 5px 60px 5px 60px
+    }
+
+    date-input-polyfill .date-select-dropdown .select-container .up,
+    date-input-polyfill .date-select-dropdown .select-container .down {
+      width: 100%;
+      height: 25px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0);
+      cursor: pointer;
+      line-height: 22px;
+      float: left;
+      border: none;
+      outline: none;
+      color: #7d7d7d;
+      position: relative
+    }
+
+    date-input-polyfill .date-select-dropdown .select-container .up:after,
+    date-input-polyfill .date-select-dropdown .select-container .down:after {
+      content: "<";
+      position: absolute;
+      top: 0;
+      left: 19px;
+      font-size: 20px;
+      display: inline-block;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    date-input-polyfill .date-select-dropdown .select-container .down:after {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg)
+    }
+
+    date-input-polyfill .date-select-dropdown .select-container .select-wrapper {
+      float: left;
+      width: 50px;
+      height: 175px;
+      position: relative;
+      margin: 10px
+    }
+
+    date-input-polyfill .date-select-dropdown .select-container .select-wrapper .option-wrapper {
+      float: left;
+      width: 100%;
+      height: auto
+    }
+
+    date-input-polyfill .date-select-dropdown .select-container .select-wrapper .option-wrapper .option {
+      height: 25px;
+      border-radius: 5px;
+      text-align: center;
+      float: left;
+      width: 100%;
+      line-height: 25px
+    }
+
+    date-input-polyfill .date-select-dropdown .select-container .select-wrapper .option-wrapper .option:nth-child(3) {
+      background-color: #d3d3d3
+    }
+
+    date-input-polyfill[data-open=false] {
+      visibility: hidden;
+      z-index: -100 !important;
+      top: 0
+    }
+
+    date-input-polyfill[data-open=true] {
+      visibility: visible
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="/static/css/728.948f365d.chunk.css">
+  <style data-styled="active" data-styled-version="5.3.11"></style>
+  <style data-emotion="css" data-s=""></style>
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div dir="ltr">
+      <div class="Toastify"></div>
+      <div class="ltr">
+        <header class="header">
+          <div class="header__logos">
+            <div class="header__logo-container--left"><img
+                src="/static/media/uidai_english_logo.37b7e790fc0b23da21bc9df098a66467.svg" alt="UIDAI Logo"></div>
+            <div class="header__logo-container--center">Unique Identification Authority of India</div>
+            <div class="header__logo-container--right"><img
+                src="/static/media/aadhaar_english_logo.9a2d63795a7f7bdd7acb2148585336be.svg" alt="Aadhaar Logo"></div>
+          </div>
+          <div class="header__bar">
+            <div class="header__bar-content-wrapper"><img
+                src="/static/media/dashboard.21335c2c89af71912adf700d228cbecd.svg" alt="Dashboard Icon"
+                class="header__dashboard-logo">
+              <div class="header__dashboard-label"><span>myAadhaar</span></div>
+              <div class="header__language-selector"><img
+                  src="/static/media/LanguageSelector.dd14b8054218a45a518df6f26aaff418.svg" alt="Language Select Icon"
+                  class="header__language-selector-icon">
+                <div class="header__language-selector-current-language-container"><img
+                    src="/static/media/LanguageSelector.dd14b8054218a45a518df6f26aaff418.svg"
+                    alt="Language Select Icon">
+                  <div class="selected-language">English</div><img
+                    src="/static/media/arrowDownWhite.5705d32d953c9b17742e53145d6d5ae2.svg"
+                    alt="Toggle langauges Select Icon" style="transform: rotate(0deg);">
+                </div>
+                <div class="header__select-language" style="display: none;">
+                  <div class="languages-container">
+                    <div class="languages">English</div>
+                    <div class="languages">हिंदी</div>
+                    <div class="languages">বাংলা</div>
+                    <div class="languages">ಕನ್ನಡ</div>
+                    <div class="languages">ગુજરાતી</div>
+                    <div class="languages">മലയാളം</div>
+                    <div class="languages">मराठी</div>
+                    <div class="languages">ଓଡ଼ିଆ</div>
+                    <div class="languages">ਪੰਜਾਬੀ</div>
+                    <div class="languages">தமிழ்</div>
+                    <div class="languages">తెలుగు</div>
+                    <div class="languages">اردو</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__nav-breadcrumbs-container">
+            <div class="header__nav-breadcrumbs">
+              <div class="css-rinua4">
+                <nav class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-o3d33y"
+                  aria-label="breadcrumb">
+                  <ol class="MuiBreadcrumbs-ol css-nhb8h9">
+                    <li class="MuiBreadcrumbs-li"><a
+                        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1iptdx1">Dashboard</a>
+                    </li>
+                    <li aria-hidden="true" class="MuiBreadcrumbs-separator css-3mf706"><svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                        aria-hidden="true" viewBox="0 0 24 24" data-testid="NavigateNextIcon">
+                        <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                      </svg></li>
+                    <li class="MuiBreadcrumbs-li">
+                      <div class="css-qxwu3q">Check Enrolment &amp; Update Status</div>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="aadhaar-body">
+        <div class="aadhaar-screen">
+          <div class="aadhaar-form">
+            <div class="aadhaar-form__topgradient"></div>
+            <div class="aadhaar-form__card-container">
+              <div>
+                <div style="font-weight: 600;">Check Aadhaar Status</div><br>
+                <div>Check if your Aadhaar is generated or updated (In case you have updated at an Enrolment/Update
+                  center).<br><br>You will require EID (Enrolment ID), SRN or URN to check your Aadhaar Status. The EID
+                  is displayed on the top of your enrolment/update acknowledgement slip and contains 14 digit enrolment
+                  number (1234/12345/12345) and the 14 digit date and time (yyyy/mm/dd hh:mm:ss) of enrolment. These 28
+                  digits together form your Enrolment ID (EID).<br><br>In case if you lost EID you can retrieve lost or
+                  forgotten EID by your registered mobile number.</div><br>
+              </div>
+              <form>
+                <div class="aadhaar-form__form-container">
+                  <div class="auth-form__radio-group"><label class="auth-form__radio-button" for="eid"><input
+                        type="radio" name="aadhaarstatusoption" id="eid" value="eid" checked=""><span
+                        class="auth-form__radio-button-label">Enrolment ID</span></label><label
+                      class="auth-form__radio-button" for="srn"><input type="radio" name="aadhaarstatusoption" id="srn"
+                        value="srn"><span class="auth-form__radio-button-label">SRN</span></label><label
+                      class="auth-form__radio-button" for="urn"><input type="radio" name="aadhaarstatusoption" id="urn"
+                        value="urn"><span class="auth-form__radio-button-label">URN</span></label></div>
+                  <div class="auth-form__text-field">
+                    <div class="sc-fXSgeo gOcOUk" direction="ltr">
+                      <div class="sc-JrDLc jWPGsS auth-form__text-field-inner-div auth-form__text-field-inner-div"
+                        direction="ltr">
+                        <div class="sc-fjvvzt hrmueY"><label font-size="" class="sc-bbSZdi laOEzn">Enter 14 digit
+                            Enrolment Number</label><input id="" font-size="" name="eid" autocomplete="off" min=""
+                            max="" placeholder="" class="sc-fBWQRz bjSLyk" value=""></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div><br>Mention date and time as per the acknowledgement slip (optional)</div>
+                  <div class="auth-form__text-field">
+                    <div class="sc-iHbSHJ hyDPBK auth-form__text-field auth-form__text-field" direction="ltr">
+                      <div class="sc-klVQfs fpiJGs auth-form__text-field-inner-div auth-form__text-field-inner-div"
+                        direction="ltr">
+                        <div
+                          style="height: 100%; position: relative; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: inherit;">
+                          <label direction="ltr" font-size="" class="sc-bypJrT iXXklM">Select EID date</label><input
+                            font-size="" name="date" direction="ltr" autocomplete="off" type="date" required=""
+                            id="calender" class="sc-ddjGPC bCWBjh" min="1904-08-29" max="2024-08-29">
+                          <div direction="ltr" class="sc-jnOGJG kLEQxl">
+                            <div class="sc-dZoequ epIxgJ"><svg xmlns="http://www.w3.org/2000/svg" width="30px"
+                                height="30px" viewBox="0 0 24 24" class="sc-gEvEer gTCASf">
+                                <defs>
+                                  <style></style>
+                                </defs>
+                                <g class="a">
+                                  <rect class="c" width="24" height="24"></rect>
+                                  <rect class="d" x="0.5" y="0.5" width="23" height="23"></rect>
+                                </g>
+                                <path class="b"
+                                  d="M15.583,12.083h-3.5v3.5h3.5ZM14.416,4.5V5.667H8.583V4.5H6.833V5.667H5.958A1.462,1.462,0,0,0,4.5,7.125v9.916A1.462,1.462,0,0,0,5.958,18.5H17.041A1.462,1.462,0,0,0,18.5,17.041V7.125a1.462,1.462,0,0,0-1.458-1.458h-.875V4.5Zm2.625,12.541H5.958V9.312H17.041Z"
+                                  transform="translate(0.33 0.5)"></path>
+                              </svg></div>
+                          </div>
+                          <div direction="ltr" font-size="" class="sc-eZkCL dSHINV"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="auth-form__text-field">
+                    <div class="sc-hHOBiw iYApyb" direction="ltr" height="auto">
+                      <div class="sc-kWtpeL eEfCbY auth-form__text-field-inner-div auth-form__text-field-inner-div"
+                        direction="ltr">
+                        <div
+                          style="height: 100%; position: relative; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: inherit; margin-top: 20px;">
+                          <label direction="ltr" font-size="" class="sc-ecPEgm hZOICm">Select EID time</label><input
+                            font-size="" name="time" autocomplete="off" type="text" required="" id="timepick"
+                            placeholder="this.props.placeholder" class="sc-gdyeKB edibEB">
+                          <div direction="ltr" class="sc-kzqdkY jKwhci">
+                            <div class="sc-bDpDS jIjZNE"><svg viewBox="0 0 24 24" data-testid="AccessTimeIcon"
+                                width="30px" height="30px" class="sc-dlWCHZ enhZDP">
+                                <path
+                                  d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
+                                </path>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path>
+                              </svg></div>
+                          </div>
+                          <div direction="ltr" font-size="" class="sc-bVHCgj cWuZw"></div>
+                        </div>
+                        <div style="margin-top: 20px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aadhaar-form__captcha-field-container">
+                    <div class="aadhaar-form__captcha-field">
+                      <div class="sc-fXSgeo gOcOUk" direction="ltr">
+                        <div
+                          class="sc-JrDLc jWPGsS aadhaar-form__captcha-field-inner-div withAudio aadhaar-form__captcha-field-inner-div withAudio"
+                          direction="ltr">
+                          <div class="sc-fjvvzt hrmueY"><label font-size="" class="sc-bbSZdi laOEzn">Enter
+                              Captcha</label><input id="" font-size="" name="captcha" autocomplete="off" min="" max=""
+                              placeholder="" class="sc-fBWQRz bjSLyk" value=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="aadhaar-form__captcha-box"><img
+                        src="data:application/image;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAyAMgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0EU4U0U8UAKKeKaKcKAHCnioLi5gs7WW5uZVigiUu7scBQO9eXX/xz023vWjs9LmuYFOPMaQJu9wMGgD1oU4Vx/hv4k+HPEa7Y7oWdx3gu2VCfoc4NdMNT0//AJ/rb/v8v+NAF0U4VTGp6f8A8/1t/wB/l/xpw1TT/wDn+tf+/wAv+NAFwU8VRTV9NcZXUbRhnGRMp/rTxqmn/wDP/a/9/l/xoAuinCqY1TTv+f8Atf8Av8v+NOGq6d/z/wBr/wB/l/xoAuinCqQ1XTv+f+1/7/L/AI0kmt6TCu6XVLKMerXCD+tAGiKcK5W8+I/g6wOJvEVixHaB/OP5JmuMl/aD8PxzFU0vUJEBxuG0Z/AmgD18U8V4/Z/Gq51+drXQdCtxMfuNqGoJECf93HP511CaV8QNXRXvfEmm6REwz5el2nnMR6b5DwfcCgDuSyopZ2CqBkknAFc3qXxF8I6S/l3Gu2rzZx5NsTO+fTamTms5Phdoly4k1u71XXJAc/8AExvXZQfZFwuPbFdTpeg6RoqbNM0yzsxjH7iFUJ+pA5oAy9B8YN4g1Hybfw/rNtZ7C3229t/JjY9goJ3HPriuoFNFPFADhRQKKAOHFOFNFPFAEV3e2un2r3V5cRwQRjLSSMFUfia8w1n4pX+sXh0jwRYS3Vw3H2to8491U8Af7Tce1bniv4dyeLfEcF1d6vPHpkcY3WinJ3juueFyOpwT/Tq9F0HTPD9kLTS7OO3i/i2j5nPqx6k/WgDwDx1J4r0uK10vXtekunmj8yS2jclVGeAx43H8+nWtDwhpvw8g0uCfxPe+bez/ADeVukCRDtnZzn68VD8ZldfHbFvutbxlfyqrovg/Tbr4e3viC8luGuTL9ns4YSAXlJAUcg55PPtmgDf0n4ZWfinT5dZ0q4SFDqMvlWx+ZDbh8AZzkHAPXrXqw+HvhH/oX7H/AL914VY6lrnws8XNZyylolKmaFWJjlQ9wPX3r3zVNeCeCrjXLI7h9m86P8qAPKvHureDPD142maV4b065vE/1khTKxn+77muTsNfhsLiKTV/CGnvaOwBZ7UpxxyD3p3w3tLbXPiFCb/DpmSdg/IbAJwfzr6XudMsb2yazubWKW2ZdpjZQRigDktC8J+B9Z0mG/t/DtosUqCT95GeAeeprL8S2PgHw8kivoWm+aBhQyD5mPoM84yPxIHqR1uprF4b8MXQtE3puPlwNyCGPKD8M4r590SK78YeMFW5mmktPPdlVSFY8lgFHr0NAGk11pN1dlbLw1C9uiktKiRsNueWwUUnrjcMDjgd69R8IeCPDd/pBnvtC02Ri5wyxce+DnlfQ5/lXZ2WgaXZW6Qx2UJCoE3MgLEAAcn6Cs3xhdS6R4buGs4lRPKZdyyiPYcYAx36np6CgDntRsvhVpQzd2GlKfQJk9M9K5m/8T/CKydWt/D9vdOhyNtv8p+uev4ivMNE0K88V+J2spJgZN+HkDblJ3YwD055xXvGn/BDwla2wS4inupscyvIR/46OKAOj0Gz0rWvCwmsdOttPt72MhDaxKh2EdeAMd6rD4U+DmExm0hJXmZmd2Y5yeTjB4/Cun0vTbbSNMttOs0KW1vGI41JzgD3qpr3ibSfDVk91qd2kSr0XOWY4zgCgD5z+LHw9g8E6hbXOnOx0+7JCI5y0bDqM9x0rvvgD4l1DUrfUdJvJ3mitVWSJnOSoJxjNecfEnx/L481O3itrdo7O3JEKdWYnufevaPg14Km8LeHJLu+TZf35Dsh6og+6D/OgCX4k/FS28EbLG0iS61WRd3lsfliXsWx6+ledaZ+0F4gtbpG1fSrae0fn92rRvj/AGTnB/KvO/F+ozal481O8nTzZDeMPLbJyFbAX6cYr0h/ixp9xo58PeLfBbW1m0ewG3+Vk4wGCOByPXdQB7j4W8V6T4v0ldQ0q4EidJIzw8TejDtW6K+QPhn4qfwr47t2gmc6fcy+RKrcbkJwpI9RxX2AKAHCigUUAcOKcKQU4UAO4AyeBVG413R7OLzLnVbKFOcNJcKoP5muR8X/AA9vPFutrOdentdP8pVa2AZwXBOSBuAGRin6X8IPCdhGPtFtNfyjnfcSkf8Ajq4GPrmgDj/idNo3jK4sx4duX1HV4dyvDaxM4Mf94tjHBHr3rkPCOvWvh/WLaHxFFqD2llP9oitomCiOf++yHGcfX8819GaZoGj6MS2m6ZaWjFdpeGFVYj0JAyag1rwjoXiJNup6dFM2OJBlXH4jBoA+efiP4lsvFXikX+nq4gWBIgXXBYgk5x+P6V7T4M06W8+E2n2c4O4xFgMfeXzCwH4jiqEPwU8NQ363AmvHiVtwhdwQfqcV6PbwRW0CQwoqRINqqvQCgD5WFprPgPxUkzW8nmWk2M7SFlXuPowr07SvjpaR2MMep2MzXKood0wAzYOTj3wD/wACPpXrNzp9pertubeOUZB+Zc8jpWBe/DnwvfwmOTS4kJIO+MYI5P8AiR/+oUARHVovGXg+a5tYpYvk8xMbWZTztcD1GA4Hcjb614PpV4PC3iWVp4ZYopPmjZZAVwOcYPyuOw6EEKe20/SXhzw5ZeGNNNhp5kEBbftd92GPUj0zjOOnpisfXPhzpOtSuxTyfMkZ28rAzldpyCCCe+QAff1AOS1H41WMGnm0EM01+yFXkhCrGpboQVkY8DsCfrXceHLifxP4JxcmaKaRXjEjRlXxk7Ww+ecY6557nrVTTPhnodkRK0RMr8ygLFh/QcRjAx2XaPaur07TLTSoGgsoUhhLFgiDABoA+XtKuZvAXjyW31C3MaRTDfGrcfK2+P5v7u4ISe4z619Ev8QfDEemfbv7Wt2j2htquN35etVfGvw60jxpEj3C+RexjCXMY5xkHB9f6ZrgNO/Z+23g/tDVt9sF5ES4Ytt7Z9zn8PfgA9T8LeKrfxN4fGqRwvFtXMiD5scZ4I68dq+VPFmtavq+uXDatOzzI20oD8oxnoPxP519c6DoNh4c0xdP06ERW4Ytt9SfX14AH4Vz2t/Cfwhr0k00+mmC5lYs01tIUbJ6nH3fzFAHmfwtX4caUsWo6jrUL6qACEu4zGsJwOmRgnOec17JpfjrwxrWrrpWmavBd3jI0gSIMw2jqd2MfrXkuqfs6S+aW0nXkMZ6JdwkEf8AAl6/kK3/AIe/Bm88IeJrfXLvWopXgV1+zwwnDhlK8sT2znp2oA4D4s/DvVNF8S3et2FtJNptzJ5++JcmFjywP45Ofeuo8LfGnQNS0WHR/G9irlFCGd4BNFIAMZZeSD9Aa92Kq6lWAKnqCM5rjPEPwm8I+JGaW40821y3/Le0fy2/LlT+VAHnOpWnwWudQtHspJo7madFVbCRwAxYAEhsgAe1fQIryLSv2f8Aw7YalHdT315dJGwZYmIUZHTkc166KAHCilFFAHDCnCiigB4pwoooAeKcKKKAHCniiigBwpwoooAeKcKKKAHCniiigBwp4oooAcKcKKKAHinCiigBwp4oooAcKeKKKAHCiiigD//Z"
+                        alt="">
+                      <div class="aadhaar-form__captcha-box__audioIco"><svg
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                          aria-hidden="true" viewBox="0 0 24 24" data-testid="VolumeUpIcon">
+                          <path
+                            d="M3 9v6h4l5 5V4L7 9zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77">
+                          </path>
+                        </svg></div><audio
+                        src="data:audio/mpeg;base64,UklGRsSrAABXQVZFZm10IBIAAAAHAAEAQB8AAEAfAAABAAgAAABkYXRhnqsAAP//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////W0k4U9s8Sbymo7D/PlNbLhwbKLCaryMZHziclq8yIDzBvDgwvpuZvB4ZJ7STncEcGi+8ods+SayuPBwdOJ6UpTgWITqcl7owJVPTRSEnyZmYuB4ZKLyTnL4eGzi+sDw8wZ6kPBodMp6UpDwWITqhnM04OLrBMBsizZiYsiAYKM2UnckhIEXT/yk2spmePBkcLqGUpT4XIDqqqU0+26m6Khkg55iYsiEXJ+eWnucoK+fnMB8urpaeSRgbLaWUpj4YIT60wTZFsJ6wKBggW5iYsCQXKFubplMwTbjnJxsrq5Wd/xkbLamUpkUdKVPJPipJpZipKBggTZiXrycXKf+itElFuKnbIRoqrJSd0xobLqyVqkUlOtP/KSJFn5amKhcgPpmWryoYK/+vWzj/pp/THhoosJSdzRobLrKatEUw07xFHx08npWmLhcgOpuXsi0dNufNLy7TnZrBHRoluJSdyRsaL7yi2z5Nrq48HBw4npWlMhYgOJ2YvDAnU9NFIifJmZm6HhgnvpScyR0bNsGyPDzJn6U6Gh0yn5SlOhcgOKKdzTg4vMkwHCLJmJi0HxgnzZWdzSEhRc3/KjaymZ48Gh0voZSlPBcgPKqpTT7bqborGiHbmJiwIRco25ae5ykt59syIC+slp5JGRwupJSlRRkiRbLBOEmwnrApGSBbmJivJBco/5umWzJNuOcoGyurlZ1bGRsuqJSmRR0pU8k8KkmlmKooGCBNmJevJxcpW6O4RUW6quchGimulJ3bGhstrJWqPiQ621spIkWflqgqFyA+mZewKRgr/69bOP+mn9MeGiiwlJ3NGhsuspq0RTDTvEUfHT6elaUuFyA8m5eyLR02580vLs2dmsEdGie0lJzJHBswuqLTRU2srjwcHTielKUyFiA6nZi6MCdT00UiJ8mZmboeGSe+lJ3JHRs2wbI8PMGfpToaHTKflKU4FiA4op7TODi8yTAcIsmYmLQfGCfNlZ3NISFFzf8qNrKZnjwaHS+hlKU8FyA8qqlNPtOpuisaIduYmLAhFyjblp7nKS3n2zIgL6yWnkkZHC6kk56rLyUgHyMnMDpb27y6srSyuLq+ydPn/1NNSUlJSUlJSU1NU1NbW1v////////n5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+f//////////////////////////////////////1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW////////////////////////////////////////////////////////+fn5+fn///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////n5////////////////////////////////1v/////////////////////////////////////////////////////////////////////////////////////////////////////////////5/////////////////////////////////////////////////////9b/////////////////////////////////1v/////////////////////////////////////////5+f///////////////////////////////////////////9b/////////////////////////////////////////////////////////////////////////////////+f/////////////////////////////////////////////////////////////////5///W////////////////////1v//////////////////+f/////////////////////////////////////////////////5+fn5+fn5///////W1tbW1NTU1NTU01NTU1TU1Nb///n28nJxby6uLS0tLrByedNPjIvKygnKCksMDhFW9vFvLy4tLSyrq2ppqmysLTbU0E2LyUnKSUoLTA4Ok3b/+fb/1NBPkFBU9vFtKylnpyZnaaktEU4KSMeGyAkIzA+/8XBsLTJ01M4LystLzJTybKmnpmWk5iiprgvJx8aGBgeJSc+08G0sK6021s6KycnKCw257yypp6cmpiXnrTF/yMcHx0dHy9BQcmyuLi8wVsyMiwlKCwyOE3FurSspqSioJ6fqLrbWyglKyQoLTpNTdO828nTU0U2NjArMDIyPk3/58W0tK2lpJ+enqXJyVMhJygjKCxFW026tNPFyVM4MDApKDAwMj5T///FtLSwpqSinpyftNvJKyApJCUpOP9NybDBycXnOi8wLCgtNjY+U1tb58W8urCqqKGenZ6u08ksHicgIyk2/1vFrbrBwec+LS8rJy02Nj5TW1v/08W8uq6qpp+enaG8500hHyQgJy1N08mwrLi6yVMyLC0oKDI2OkVb/1v/29vBurKspqGenZ+w/1spHCQjJC1BycW0qbK8xU04KSkpJS84Ok1b5/9b2//bwbyyrKain56hsltTKRwlJCUyTcW8sqq0wclBMisoKScvOj5T5+fn/+f//8nBurKqpaWhn6jFTUUlHisnLD7bwbyurbzJ/zgtKSgpKTZBRefT29vn/1NT59vJurKqqKShpKnJTUEnJCwrMkXTvLywssnnRTAsKCksLz5NW9PT2+dbTUFBRVPnxbquqaakoqSqyU1BKyQvLTJN08HFuLrnW00yLy8vMDhFW//b2/9bTUE+PkFN/8m6tK2pqKampqy8/0E4KCwyMEHn08nFwdNbUz4yMjIyOD5NU1v/U01FPj4+PkFT/9O8uLKtrKyqqqyuuv9BQS0sOjg+W9vT08nTU1NFODg4OjpBU1NTW1NNRUE+QUFFTVvn08G6urKusKyqrKquultFTSsvPjA+W//n58nTU/9NODo6OjpBTUVNW01FTUU+QUFBRU1b/9vFwbi0sK6urKytrrK8W0FNMC9BOD5b/+fn09tTU1M+PkE+PkVTU1P/U0VNQTo+Pj5BTVv/28nJwby6urSysrCurq6yuNtNTTgsODYyRVP/59vT/1v/RT5FQT5FTU1TW1tNTUU+PkFBRU1b/+fb09PJxcXBwbq4uLCusLCwuNtNQTorMDgwPlv/59PJ21v/TT5BQT5BTVNNW1tNTU1BQUVFRU1bW//b29vb29vbycnJvLy6srKwsLK4wedFQTgvOjo6U//n29PT51tbRT5BQT5FU1Nb//9bW1NBPkE6QUVNW///////////5+fb08nBuriwsK6tsrjBU0VFMjA+OkFb59vTydPnW1tFPkVBQU1TU1v//1tbW01NTUVFRUVTU1P/W1v/W//n59PTycXBvLi0sq6ysLLB21NFOjA4OjhFW1Pn09vn/1tNQUFBPkFFRVP////n//9bW1NNTU1NTVNTW1tb////5+fb08nJxcG8vLq4tLS0tLrF51NTODZBODhNTU3n2+fn5/9TTUVBPkFFRU1b///n5///W1NNTUVBRUFFTVNT////5+fb29PT08nFxcG8vLi4uLi6wdv/Wz46QTo4RU1FW+fn59vn/1tbU0VNTU1TW1v//////1tbU01NRUVNTU1TW1v/5+fb29vb09PT08nJycXFxcHBwcXFydv/W1tFQUVBPkFFRU1TU1v/////////W/9bW1tbW1tbW1tbW1tbW1tbW1tbW////+fn59vb29vb29vb29vb29vb5+fn5+fn/////////////////1tbW1tbW1v/////////W1tbW1tbW1tbW1tbW1tbW1v//////////////////////////////////////////////+fn5+fn5+fn5+fn/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+f//////////////////////////////////////////////////////1tbW1tbW1tb/////////////////////////////////////////////////////+f//////////////////////////////////////////////////////////////1tbW1tbW1tb/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+fn5+fn5+fn5+fn5+fn5+fn5///////////////////////////////////////W1tbW1v/W1tbW///////////////////////////////////////////////////////////////////////////////////////W1NFTVP/29vn/+fn29vn/1tbW//////////n5+fn//9TTVP/5/9NQUFT59vb////5+fn/1tTU1v////n5+fb5/9b/+fb5///5+fb5//n5+fn5+fn/////+fn5+fn5+fn5//n/////////////////////////////1tbW////1v/////W1v//1tbW1tbW////1v/////////////////////////////5///////////5//n/+f////////n/////+f/////////////////////////W1v///9bW///W////1v//1v//1v/////////////////////////////////////5//n///n5////////////+fn/+fn////////////////////////////W1v/W/9bW///W///////////////////////////////////////////////////5//n5+f/5//n5+f//+f/5///5///////////5///////////////////////W1tbW////1v//1tb//9bW1v/W/9b////////////////////////////////5+fn5+f////n////5///////////////////////////////////////////////////////////W1v/////////////////////////////////////////////////////////////////////////////////////////////////////////////////W1tbW1v//////////////////////////////////////////////+f//////+f////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////n/+f//////////////////////////////////////////////////////////////////////1tb/////////////////////////////////////////////////////////////////////////////////////////////1tb////W////////////////1tb/1tb/////////////////////////////////////+f/////////5+f//+fn////////////////////////////////////////////////////W///W////////////////////////////////////////////////+f//////////////////////////////////////////////////////////////////////////////////////////////////////////1tb/1v////////////////////////////////////////n5+fn5+fn5+f/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////W0k4U9s8Sbymo7D/PlNbLhwbKLCaryMZHziclq8yIDzBvDgwvpuZvB4ZJ7STncEcGi+8ods+SayuPBwdOJ6UpTgWITqcl7owJVPTRSEnyZmYuB4ZKLyTnL4eGzi+sDw8wZ6kPBodMp6UpDwWITqhnM04OLrBMBsizZiYsiAYKM2UnckhIEXT/yk2spmePBkcLqGUpT4XIDqqqU0+26m6Khkg55iYsiEXJ+eWnucoK+fnMB8urpaeSRgbLaWUpj4YIT60wTZFsJ6wKBggW5iYsCQXKFubplMwTbjnJxsrq5Wd/xkbLamUpkUdKVPJPipJpZipKBggTZiXrycXKf+itElFuKnbIRoqrJSd0xobLqyVqkUlOtP/KSJFn5amKhcgPpmWryoYK/+vWzj/pp/THhoosJSdzRobLrKatEUw07xFHx08npWmLhcgOpuXsi0dNufNLy7TnZrBHRoluJSdyRsaL7yi2z5Nrq48HBw4npWlMhYgOJ2YvDAnU9NFIifJmZm6HhgnvpScyR0bNsGyPDzJn6U6Gh0yn5SlOhcgOKKdzTg4vMkwHCLJmJi0HxgnzZWdzSEhRc3/KjaymZ48Gh0voZSlPBcgPKqpTT7bqborGiHbmJiwIRco25ae5ykt59syIC+slp5JGRwupJSlRRkiRbLBOEmwnrApGSBbmJivJBco/5umWzJNuOcoGyurlZ1bGRsuqJSmRR0pU8k8KkmlmKooGCBNmJevJxcpW6O4RUW6quchGimulJ3bGhstrJWqPiQ621spIkWflqgqFyA+mZewKRgr/69bOP+mn9MeGiiwlJ3NGhsuspq0RTDTvEUfHT6elaUuFyA8m5eyLR02580vLs2dmsEdGie0lJzJHBswuqLTRU2srjwcHTielKUyFiA6nZi6MCdT00UiJ8mZmboeGSe+lJ3JHRs2wbI8PMGfpToaHTKflKU4FiA4op7TODi8yTAcIsmYmLQfGCfNlZ3NISFFzf8qNrKZnjwaHS+hlKU8FyA8qqlNPtOpuisaIduYmLAhFyjblp7nKS3n2zIgL6yWnkkZHC6kk56rLyUgHyMnMDpb27y6srSyuLq+ydPn/1NNSUlJSUlJSU1NU1NbW1v////////n5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+f//////////////////////////////////////1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW////////////////////////////////////////////////////////+fn5+fn/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2f/////////////////////////Z/////////////////9n////////////////////////////Z////2f//////////////////2dn/2f///////////////////////////9n//9n//////////////////////////////////////////9n//////////9n/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2f//////////////////2f///////9n////////////////////////Z/////////9n////////////////Z/9n//9n/////////////////////////////////2f///////////////////////9n/////2f//2f/////////////Z///Z/////////////////////////9nZ/9n/2f//2f/////////Z/9n//////////////////9n//9n////////////////////////////////////////////////////////////////////////////////////////////////////Z/////////////////////9n////Z///Z2f///////////////////////9n/////////////////2f///////////9n////Z////2dn/2f///////////////////9nZ/9n////////////////Z///Z2f//////////////2f///////////////9n/////////////2dnZ/////////9n////////Z/////////////9n/2dn//////////9n////////////Z2f/////////////Z/////////////////////////////////////9n////////////////////////////////Z/////////////9n////////////Z/////////9nZ2f//////////2f///////9n/////////////2f//////////////////////2f//////2f///////9n/2f///////9n//9nZ////////2f/////////Z/////////9n/2dnZ/9n/////////2f///////9n////Z/////////9nZ///Z/////9n//9n/////////2dn//9n/2f/Z////+f//////////////2dn////Z/9n/////+f//////////////2dnW2dn///////////////////n////////Z2dnZ2f//2dbZ2f//+fn5///////W2dnW1tn///n5+fnZ///W1tb//9bW1tnZ//n///n5/9n//9bW2f/W2f/////5+f////nZ1v//1tb//9n////Z1v/51tn////W//nZ//n//9bZ/9bW//n///n5///5+dnW///W1tbW1NTU01JTU1TU1P//9vTycG+vrq6vsHF0+dnU0VBPDo6ODY4ODo2NDY2PFtnZ7q2tq6rqaisrK26xdtJPDQwNDA2QT4+RU1NQT46MCsqNkEvW7S+sqWhoaOjoa/FwVMvLSsqKSs8QUnJxdPF20k8LykjJTAqL8XBtqOenJydnKO0uv8uKSQfISIrOEHJtrqyssHnQTAnHyApJCjbybqjnZqampmfrrL/LiYfHRweKC08ybq2r66401M0JSApJR4+Z1OuoZ2bmpicqKm+NCwkHBwcHycv27iwpKWqqrbTPCkiGhohHSH//7qfnJiXl5egqrA8KSUbGRsdJC5buK6joqWmsMlJKR8bGh4aIltBtp6dl5WVl5+ltDQtIRkZGRshK/++rZ6goqCrvmcvIhoXGhsZLltNpJualZOTmaCl5y8rGxgZGBwhNOe6pp+gn6KsvlMuHxoWFxsaKP9np5qZk5OTmJ6m0zAqHBcYGBshL1u6p5+enqCpuP8wIhsXFxsbIlNbrJualZOTmJ2lwTgtHRkZGBsgK0XFqqKenaGlrttBKR4aFhkdGy/n/6CcmpSUlZufqls4KRsbGhkdJC9Nuqmmnp+mprj/PCYfGhgcHB88U8mfnpqVlpidoLBbPiYdHhocHyYyTbqup6CkqKq+ZzwoIBwbHh4iQUG8oaOamJianqG250EmIR8cHiAoME3Bsqmlp6muvP8+LCMeHR8gIj5JzaWmnJqam56hsNNTKyYhHSAgKC5B076sqamor7bTRTYoIh4eIyIrW0mwpqWcnJueoKjB0z4pKSAgIiUtNFvTuKysqqy2uv9BMCkkHyElJi9nU7Cmpp2dnaCiq8HbPCsrIyImKC44W9O6rq6srbi+50E2LCYiIiUrK0nT06epop6fn6aouNtbMC0qJSkpLjZF58m2srCvtsHTUzw0LSglJSouL//bxaeso6GipKqrwdNbMjAtKC0rMjhJ/9O6ura2usHbW0E4MCsqKSowNDrJ27irrqSmpaqssMnTTTY4LS4vLzg8TVvTwcG6vMHJ52dFPjYwListLzg2Z8nnrLKspqqprK68xdtBPjYuNC80Nj5JW9PTwb7Bwc3b/0lBODIuLS0wODT//9OutqmpqamsrbzB20FBMi8wLTI0PEVb0828vLy6xcnnU0U8Ni4tKys0NDjT/76tsqeppqmrrr7BWz4+Li4vKzA0Pkn/ycW4uri4xcnbU0U8NC4tKiovNDZNyeeurq6kqaeqrLbBzUE8NisvLS02OEVb08W6tri0usXJ/01BOjAvLSorLDA8PNPJwaqwp6epqK2vwclbODovKy8sMDg+U+fFvra2trK+wclbU0E4NC8tKysrLjg+RcHFtqmupqeoq66yydNFNjYtLC8tMjxFW83BurKytLS8xdNnTUE4NDAtLC0rLS82RVPTuL6rq6ulq6mussHnWzo2MC0vLjA6QVvbwby2srayusHF51tFPDgyMC4uLisvLzA6RWfnuri0qa2pp6ursLjJ50k4Ni4uMC82Pkn/zb66sra2tr7ByedbST44NC8uLi0uLi8wNjxJ59u+sLSqqaulqquvtsXnUzg0LywvLzA8QVvbxby2srSwuLy82+dTPjwyLy4uLS4vLzY4PEVF/9vBwbKusqesqqmvr7jB51M+MjAtKy8uNj5N58m+uLKysrK6vs1nWz48NjAwLzAwNDg8RU1TZ2f//9vTycW8tryvsrKvtra+yf9NQTY0MC80NDxFU9vJwbq4uLi6xcnbU1NBPDw4ODg8PkFNU1v/////W1NNRU1TU2fTycW0urKvtrS6xdtnRTw4MjI2NDxFU+fNxb68vL6+ydPbW1NTRUlFQUlJTVNTU1tbU1NNRUU+PDw4PklTZ8m+vq+wr6ywsLjB22dFOjg0MDY2Pk1T283Fwb6+wcHJ29NnW2dFU01FU01NTU1NU1NJTU1FSUE+QTxBQUVn59u6vriutK6vsrS+yedbRTw8NDY6OEVNU+fb08nJycnN09Pn2////1P/W1NbTVNNTUlJSUVJRUVFQUVFRUlJW//nzb6+urC4sLK4uMHN51tFPjw2ODo6QUVNZ//b083JycnJzc3T29vn//9bW1NNTUVFRUVFRUVFSUlJTUlJTUVNU2fn58HFvrK6sLK4tr7F2/9NQT44ODg4PkFFW1vn09PNycnJxc3Tyefb51vnU01TRUVFQUFBQUFNRU1TSVNTTVNTTVv/59vBwb6yurKyura+ydtnTUE8ODY4Njw+RVNb59PTycnFxcXFzcXb29Nb51NNU0VFRUFFRUVFTU1NU01TU1NTU1NTU//n28XFxba8uLS8uL7J0/9NRUE6Ojo4PkFFU1v/09PJxcXFwcXFydPT2/9nU01NRUFBQUFBRUVJTVNTU1tbW1tbU1tTW//n58nFybjBuri+usHJ0/9TSUE+PDw8QUFFW1v/29PJycnJycnJ09vb//9nU1NNSUlFRUVFSUlNTVNTU1tbW2dbW1tbW1tn5//TydO+xb66wb7BydPnW1NJQT4+PEFBRVNT/9vb08nNycnJ09PT5+f/U/9NTU1FTUVFTUlNU1NTW1tb/1tb/1tbW1NbW2f/Z83bzb7Jur7BvMXJ0+dnU01BRUE+RUFNU1P/59vT09PT09PT29vb/+dnU2dTU1NJTU1NTU1NU1NTW1tbZ1tbZ1tbW1NbW///583bwcXFusW+wcnJ2/9bU0lFQT5FRUVTU1v/59vT09PTzdPT0+fb52f/U1tTTVNNTU1NTU1TU1tbW2dbW2dbZ1tbW1tb////09PTwcnBvsW+xc3T5/9bTUVFRUFFRUlTU///59vb09PT09Pb29v/52dbZ1NTU01NTU1NTU1TU1NbW1tnW2dnW1tbW1tbW////83nycXNvsXFwc3N2/9bU01FRUFFRUVTU1v//9vb29PT09Pb29vn//9nW1tTU1NNTU1NU1NTU1NbW1tnZ2dnZ1tbW1tbW2f//9vT28XNxb7JwcXNzdv/Z1NNSUVFSUVNU1Nn/+fb29PT09PT29vb////W2dTU1NNU1NTU1NTU1tbW1tbZ2dnZ2dnW1tbW1tb///n09vJxc3BycXF083b/2dbTUlJRUlJSVNTW///29vb09PT09vb5+f//2dbW1NTU1NTU1NTU1NbW1tbW2dnZ2dnZ2dbW1tbW2f//+fT28nJycHJxcnT0+f/W1NNSUlFSU1NW1v//+fb29vb29vb2+fn/2dnW1tbU1NTU1NTU1NbW1tbW1tbW2dbZ1tnZ1tnW1tnW//n/9vT28nNycXNyc3T2+dnW1NNTUlJTU1TW1v/5+fb29vb29vn5+f/Z2dbW1tbW1tbW1tbW1tbW1tbW1tnZ2f/Z///Z/9nZ/9n/2f////n59Pbzc3Nyc3T09vn/2dbU1NTTVNTW1tn/+fn59vb59vn5+f/Z2dbW1tbW1tbW1tbW1tbW1tbZ1tnZ2f/////////////////////////5+fb29vb09Pb29vb2+f//2dbW1tbU1tbW1tnZ2f/////Z2dnW1tbW1tbW1tbZ2dnZ/////////9n/////////////////////////////////+fn/+fn/+f///9nZ2dbW1tbZ1tbZ2dn/2f///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9nZ/9n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9n////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////W0k4U9s8Sbymo7D/PlNbLhwbKLCaryMZHziclq8yIDzBvDgwvpuZvB4ZJ7STncEcGi+8ods+SayuPBwdOJ6UpTgWITqcl7owJVPTRSEnyZmYuB4ZKLyTnL4eGzi+sDw8wZ6kPBodMp6UpDwWITqhnM04OLrBMBsizZiYsiAYKM2UnckhIEXT/yk2spmePBkcLqGUpT4XIDqqqU0+26m6Khkg55iYsiEXJ+eWnucoK+fnMB8urpaeSRgbLaWUpj4YIT60wTZFsJ6wKBggW5iYsCQXKFubplMwTbjnJxsrq5Wd/xkbLamUpkUdKVPJPipJpZipKBggTZiXrycXKf+itElFuKnbIRoqrJSd0xobLqyVqkUlOtP/KSJFn5amKhcgPpmWryoYK/+vWzj/pp/THhoosJSdzRobLrKatEUw07xFHx08npWmLhcgOpuXsi0dNufNLy7TnZrBHRoluJSdyRsaL7yi2z5Nrq48HBw4npWlMhYgOJ2YvDAnU9NFIifJmZm6HhgnvpScyR0bNsGyPDzJn6U6Gh0yn5SlOhcgOKKdzTg4vMkwHCLJmJi0HxgnzZWdzSEhRc3/KjaymZ48Gh0voZSlPBcgPKqpTT7bqborGiHbmJiwIRco25ae5ykt59syIC+slp5JGRwupJSlRRkiRbLBOEmwnrApGSBbmJivJBco/5umWzJNuOcoGyurlZ1bGRsuqJSmRR0pU8k8KkmlmKooGCBNmJevJxcpW6O4RUW6quchGimulJ3bGhstrJWqPiQ621spIkWflqgqFyA+mZewKRgr/69bOP+mn9MeGiiwlJ3NGhsuspq0RTDTvEUfHT6elaUuFyA8m5eyLR02580vLs2dmsEdGie0lJzJHBswuqLTRU2srjwcHTielKUyFiA6nZi6MCdT00UiJ8mZmboeGSe+lJ3JHRs2wbI8PMGfpToaHTKflKU4FiA4op7TODi8yTAcIsmYmLQfGCfNlZ3NISFFzf8qNrKZnjwaHS+hlKU8FyA8qqlNPtOpuisaIduYmLAhFyjblp7nKS3n2zIgL6yWnkkZHC6kk56rLyUgHyMnMDpb27y6srSyuLq+ydPn/1NNSUlJSUlJSU1NU1NbW1v////////n5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+f//////////////////////////////////////1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW////////////////////////////////////////////////////////+fn5+fn/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2f/////////////////////////Z/////////////////9n////////////////////////////Z////2f//////////////////2dn/2f///////////////////////////9n//9n//////////////////////////////////////////9n//////////9n/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2f//////////////////2f///////9n////////////////////////Z/////////9n////////////////Z/9n//9n/////////////////////////////////2f///////////////////////9n/////2f//2f/////////////Z///Z/////////////////////////9nZ/9n/2f//2f/////////Z/9n//////////////////9n//9n////////////////////////////////////////////////////////////////////////////////////////////////////Z/////////////////////9n////Z///Z2f///////////////////////9n/////////////////2f///////////9n////Z////2dn/2f///////////////////9nZ/9n////////////////Z///Z2f//////////////2f///////////////9n/////////////2dnZ/////////9n////////Z/////////////9n/2dn//////////9n////////////Z2f/////////////Z/////////////////////////////////////9n////////////////////////////////Z/////////////9n////////////Z/////////9nZ2f//////////2f///////9n/////////////2f//////////////////////2f//////2f///////9n/2f///////9n//9nZ////////2f/////////Z/////////9n/2dnZ/9n/////////2f///////9n////Z/////////9nZ///Z/////9n//9n/////////2dn//9n/2f/Z////+f//////////////2dn////Z/9n/////+f//////////////2dnW2dn///////////////////n////////Z2dnZ2f//2dbZ2f//+fn5///////W2dnW1tn///n5+fnZ///W1tb//9bW1tnZ//n///n5/9n//9bW2f/W2f/////5+f////nZ1v//1tb//9n////Z1v/51tn////W//nZ//n//9bZ/9bW//n///n5///5+dnW///W1tbW1NTU01JTU1TU1P//9vTycG+vrq6vsHF0+dnU0VBPDo6ODY4ODo2NDY2PFtnZ7q2tq6rqaisrK26xdtJPDQwNDA2QT4+RU1NQT46MCsqNkEvW7S+sqWhoaOjoa/FwVMvLSsqKSs8QUnJxdPF20k8LykjJTAqL8XBtqOenJydnKO0uv8uKSQfISIrOEHJtrqyssHnQTAnHyApJCjbybqjnZqampmfrrL/LiYfHRweKC08ybq2r66401M0JSApJR4+Z1OuoZ2bmpicqKm+NCwkHBwcHycv27iwpKWqqrbTPCkiGhohHSH//7qfnJiXl5egqrA8KSUbGRsdJC5buK6joqWmsMlJKR8bGh4aIltBtp6dl5WVl5+ltDQtIRkZGRshK/++rZ6goqCrvmcvIhoXGhsZLltNpJualZOTmaCl5y8rGxgZGBwhNOe6pp+gn6KsvlMuHxoWFxsaKP9np5qZk5OTmJ6m0zAqHBcYGBshL1u6p5+enqCpuP8wIhsXFxsbIlNbrJualZOTmJ2lwTgtHRkZGBsgK0XFqqKenaGlrttBKR4aFhkdGy/n/6CcmpSUlZufqls4KRsbGhkdJC9Nuqmmnp+mprj/PCYfGhgcHB88U8mfnpqVlpidoLBbPiYdHhocHyYyTbqup6CkqKq+ZzwoIBwbHh4iQUG8oaOamJianqG250EmIR8cHiAoME3Bsqmlp6muvP8+LCMeHR8gIj5JzaWmnJqam56hsNNTKyYhHSAgKC5B076sqamor7bTRTYoIh4eIyIrW0mwpqWcnJueoKjB0z4pKSAgIiUtNFvTuKysqqy2uv9BMCkkHyElJi9nU7Cmpp2dnaCiq8HbPCsrIyImKC44W9O6rq6srbi+50E2LCYiIiUrK0nT06epop6fn6aouNtbMC0qJSkpLjZF58m2srCvtsHTUzw0LSglJSouL//bxaeso6GipKqrwdNbMjAtKC0rMjhJ/9O6ura2usHbW0E4MCsqKSowNDrJ27irrqSmpaqssMnTTTY4LS4vLzg8TVvTwcG6vMHJ52dFPjYwListLzg2Z8nnrLKspqqprK68xdtBPjYuNC80Nj5JW9PTwb7Bwc3b/0lBODIuLS0wODT//9OutqmpqamsrbzB20FBMi8wLTI0PEVb0828vLy6xcnnU0U8Ni4tKys0NDjT/76tsqeppqmrrr7BWz4+Li4vKzA0Pkn/ycW4uri4xcnbU0U8NC4tKiovNDZNyeeurq6kqaeqrLbBzUE8NisvLS02OEVb08W6tri0usXJ/01BOjAvLSorLDA8PNPJwaqwp6epqK2vwclbODovKy8sMDg+U+fFvra2trK+wclbU0E4NC8tKysrLjg+RcHFtqmupqeoq66yydNFNjYtLC8tMjxFW83BurKytLS8xdNnTUE4NDAtLC0rLS82RVPTuL6rq6ulq6mussHnWzo2MC0vLjA6QVvbwby2srayusHF51tFPDgyMC4uLisvLzA6RWfnuri0qa2pp6ursLjJ50k4Ni4uMC82Pkn/zb66sra2tr7ByedbST44NC8uLi0uLi8wNjxJ59u+sLSqqaulqquvtsXnUzg0LywvLzA8QVvbxby2srSwuLy82+dTPjwyLy4uLS4vLzY4PEVF/9vBwbKusqesqqmvr7jB51M+MjAtKy8uNj5N58m+uLKysrK6vs1nWz48NjAwLzAwNDg8RU1TZ2f//9vTycW8tryvsrKvtra+yf9NQTY0MC80NDxFU9vJwbq4uLi6xcnbU1NBPDw4ODg8PkFNU1v/////W1NNRU1TU2fTycW0urKvtrS6xdtnRTw4MjI2NDxFU+fNxb68vL6+ydPbW1NTRUlFQUlJTVNTU1tbU1NNRUU+PDw4PklTZ8m+vq+wr6ywsLjB22dFOjg0MDY2Pk1T283Fwb6+wcHJ29NnW2dFU01FU01NTU1NU1NJTU1FSUE+QTxBQUVn59u6vriutK6vsrS+yedbRTw8NDY6OEVNU+fb08nJycnN09Pn2////1P/W1NbTVNNTUlJSUVJRUVFQUVFRUlJW//nzb6+urC4sLK4uMHN51tFPjw2ODo6QUVNZ//b083JycnJzc3T29vn//9bW1NNTUVFRUVFRUVFSUlJTUlJTUVNU2fn58HFvrK6sLK4tr7F2/9NQT44ODg4PkFFW1vn09PNycnJxc3Tyefb51vnU01TRUVFQUFBQUFNRU1TSVNTTVNTTVv/59vBwb6yurKyura+ydtnTUE8ODY4Njw+RVNb59PTycnFxcXFzcXb29Nb51NNU0VFRUFFRUVFTU1NU01TU1NTU1NTU//n28XFxba8uLS8uL7J0/9NRUE6Ojo4PkFFU1v/09PJxcXFwcXFydPT2/9nU01NRUFBQUFBRUVJTVNTU1tbW1tbU1tTW//n58nFybjBuri+usHJ0/9TSUE+PDw8QUFFW1v/29PJycnJycnJ09vb//9nU1NNSUlFRUVFSUlNTVNTU1tbW2dbW1tbW1tn5//TydO+xb66wb7BydPnW1NJQT4+PEFBRVNT/9vb08nNycnJ09PT5+f/U/9NTU1FTUVFTUlNU1NTW1tb/1tb/1tbW1NbW2f/Z83bzb7Jur7BvMXJ0+dnU01BRUE+RUFNU1P/59vT09PT09PT29vb/+dnU2dTU1NJTU1NTU1NU1NTW1tbZ1tbZ1tbW1NbW///583bwcXFusW+wcnJ2/9bU0lFQT5FRUVTU1v/59vT09PTzdPT0+fb52f/U1tTTVNNTU1NTU1TU1tbW2dbW2dbZ1tbW1tb////09PTwcnBvsW+xc3T5/9bTUVFRUFFRUlTU///59vb09PT09Pb29v/52dbZ1NTU01NTU1NTU1TU1NbW1tnW2dnW1tbW1tbW////83nycXNvsXFwc3N2/9bU01FRUFFRUVTU1v//9vb29PT09Pb29vn//9nW1tTU1NNTU1NU1NTU1NbW1tnZ2dnZ1tbW1tbW2f//9vT28XNxb7JwcXNzdv/Z1NNSUVFSUVNU1Nn/+fb29PT09PT29vb////W2dTU1NNU1NTU1NTU1tbW1tbZ2dnZ2dnW1tbW1tb///n09vJxc3BycXF083b/2dbTUlJRUlJSVNTW///29vb09PT09vb5+f//2dbW1NTU1NTU1NTU1NbW1tbW2dnZ2dnZ2dbW1tbW2f//+fT28nJycHJxcnT0+f/W1NNSUlFSU1NW1v//+fb29vb29vb2+fn/2dnW1tbU1NTU1NTU1NbW1tbW1tbW2dbZ1tnZ1tnW1tnW//n/9vT28nNycXNyc3T2+dnW1NNTUlJTU1TW1v/5+fb29vb29vn5+f/Z2dbW1tbW1tbW1tbW1tbW1tbW1tnZ2f/Z///Z/9nZ/9n/2f////n59Pbzc3Nyc3T09vn/2dbU1NTTVNTW1tn/+fn59vb59vn5+f/Z2dbW1tbW1tbW1tbW1tbW1tbZ1tnZ2f/////////////////////////5+fb29vb09Pb29vb2+f//2dbW1tbU1tbW1tnZ2f/////Z2dnW1tbW1tbW1tbZ2dnZ/////////9n/////////////////////////////////+fn/+fn/+f///9nZ2dbW1tbZ1tbZ2dn/2f///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9nZ/9n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9n////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////W0k4U9s8Sbymo7D/PlNbLhwbKLCaryMZHziclq8yIDzBvDgwvpuZvB4ZJ7STncEcGi+8ods+SayuPBwdOJ6UpTgWITqcl7owJVPTRSEnyZmYuB4ZKLyTnL4eGzi+sDw8wZ6kPBodMp6UpDwWITqhnM04OLrBMBsizZiYsiAYKM2UnckhIEXT/yk2spmePBkcLqGUpT4XIDqqqU0+26m6Khkg55iYsiEXJ+eWnucoK+fnMB8urpaeSRgbLaWUpj4YIT60wTZFsJ6wKBggW5iYsCQXKFubplMwTbjnJxsrq5Wd/xkbLamUpkUdKVPJPipJpZipKBggTZiXrycXKf+itElFuKnbIRoqrJSd0xobLqyVqkUlOtP/KSJFn5amKhcgPpmWryoYK/+vWzj/pp/THhoosJSdzRobLrKatEUw07xFHx08npWmLhcgOpuXsi0dNufNLy7TnZrBHRoluJSdyRsaL7yi2z5Nrq48HBw4npWlMhYgOJ2YvDAnU9NFIifJmZm6HhgnvpScyR0bNsGyPDzJn6U6Gh0yn5SlOhcgOKKdzTg4vMkwHCLJmJi0HxgnzZWdzSEhRc3/KjaymZ48Gh0voZSlPBcgPKqpTT7bqborGiHbmJiwIRco25ae5ykt59syIC+slp5JGRwupJSlRRkiRbLBOEmwnrApGSBbmJivJBco/5umWzJNuOcoGyurlZ1bGRsuqJSmRR0pU8k8KkmlmKooGCBNmJevJxcpW6O4RUW6quchGimulJ3bGhstrJWqPiQ621spIkWflqgqFyA+mZewKRgr/69bOP+mn9MeGiiwlJ3NGhsuspq0RTDTvEUfHT6elaUuFyA8m5eyLR02580vLs2dmsEdGie0lJzJHBswuqLTRU2srjwcHTielKUyFiA6nZi6MCdT00UiJ8mZmboeGSe+lJ3JHRs2wbI8PMGfpToaHTKflKU4FiA4op7TODi8yTAcIsmYmLQfGCfNlZ3NISFFzf8qNrKZnjwaHS+hlKU8FyA8qqlNPtOpuisaIduYmLAhFyjblp7nKS3n2zIgL6yWnkkZHC6kk56rLyUgHyMnMDpb27y6srSyuLq+ydPn/1NNSUlJSUlJSU1NU1NbW1v////////n5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+f//////////////////////////////////////1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW////////////////////////////////////////////////////////+fn5+fn/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2f/////////////////////////Z/////////////////9n////////////////////////////Z////2f//////////////////2dn/2f///////////////////////////9n//9n//////////////////////////////////////////9n//////////9n/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2f//////////////////2f///////9n////////////////////////Z/////////9n////////////////Z/9n//9n/////////////////////////////////2f///////////////////////9n/////2f//2f/////////////Z///Z/////////////////////////9nZ/9n/2f//2f/////////Z/9n//////////////////9n//9n////////////////////////////////////////////////////////////////////////////////////////////////////Z/////////////////////9n////Z///Z2f///////////////////////9n/////////////////2f///////////9n////Z////2dn/2f///////////////////9nZ/9n////////////////Z///Z2f//////////////2f///////////////9n/////////////2dnZ/////////9n////////Z/////////////9n/2dn//////////9n////////////Z2f/////////////Z/////////////////////////////////////9n////////////////////////////////Z/////////////9n////////////Z/////////9nZ2f//////////2f///////9n/////////////2f//////////////////////2f//////2f///////9n/2f///////9n//9nZ////////2f/////////Z/////////9n/2dnZ/9n/////////2f///////9n////Z/////////9nZ///Z/////9n//9n/////////2dn//9n/2f/Z////+f//////////////2dn////Z/9n/////+f//////////////2dnW2dn///////////////////n////////Z2dnZ2f//2dbZ2f//+fn5///////W2dnW1tn///n5+fnZ///W1tb//9bW1tnZ//n///n5/9n//9bW2f/W2f/////5+f////nZ1v//1tb//9n////Z1v/51tn////W//nZ//n//9bZ/9bW//n///n5///5+dnW///W1tbW1NTU01JTU1TU1P//9vTycG+vrq6vsHF0+dnU0VBPDo6ODY4ODo2NDY2PFtnZ7q2tq6rqaisrK26xdtJPDQwNDA2QT4+RU1NQT46MCsqNkEvW7S+sqWhoaOjoa/FwVMvLSsqKSs8QUnJxdPF20k8LykjJTAqL8XBtqOenJydnKO0uv8uKSQfISIrOEHJtrqyssHnQTAnHyApJCjbybqjnZqampmfrrL/LiYfHRweKC08ybq2r66401M0JSApJR4+Z1OuoZ2bmpicqKm+NCwkHBwcHycv27iwpKWqqrbTPCkiGhohHSH//7qfnJiXl5egqrA8KSUbGRsdJC5buK6joqWmsMlJKR8bGh4aIltBtp6dl5WVl5+ltDQtIRkZGRshK/++rZ6goqCrvmcvIhoXGhsZLltNpJualZOTmaCl5y8rGxgZGBwhNOe6pp+gn6KsvlMuHxoWFxsaKP9np5qZk5OTmJ6m0zAqHBcYGBshL1u6p5+enqCpuP8wIhsXFxsbIlNbrJualZOTmJ2lwTgtHRkZGBsgK0XFqqKenaGlrttBKR4aFhkdGy/n/6CcmpSUlZufqls4KRsbGhkdJC9Nuqmmnp+mprj/PCYfGhgcHB88U8mfnpqVlpidoLBbPiYdHhocHyYyTbqup6CkqKq+ZzwoIBwbHh4iQUG8oaOamJianqG250EmIR8cHiAoME3Bsqmlp6muvP8+LCMeHR8gIj5JzaWmnJqam56hsNNTKyYhHSAgKC5B076sqamor7bTRTYoIh4eIyIrW0mwpqWcnJueoKjB0z4pKSAgIiUtNFvTuKysqqy2uv9BMCkkHyElJi9nU7Cmpp2dnaCiq8HbPCsrIyImKC44W9O6rq6srbi+50E2LCYiIiUrK0nT06epop6fn6aouNtbMC0qJSkpLjZF58m2srCvtsHTUzw0LSglJSouL//bxaeso6GipKqrwdNbMjAtKC0rMjhJ/9O6ura2usHbW0E4MCsqKSowNDrJ27irrqSmpaqssMnTTTY4LS4vLzg8TVvTwcG6vMHJ52dFPjYwListLzg2Z8nnrLKspqqprK68xdtBPjYuNC80Nj5JW9PTwb7Bwc3b/0lBODIuLS0wODT//9OutqmpqamsrbzB20FBMi8wLTI0PEVb0828vLy6xcnnU0U8Ni4tKys0NDjT/76tsqeppqmrrr7BWz4+Li4vKzA0Pkn/ycW4uri4xcnbU0U8NC4tKiovNDZNyeeurq6kqaeqrLbBzUE8NisvLS02OEVb08W6tri0usXJ/01BOjAvLSorLDA8PNPJwaqwp6epqK2vwclbODovKy8sMDg+U+fFvra2trK+wclbU0E4NC8tKysrLjg+RcHFtqmupqeoq66yydNFNjYtLC8tMjxFW83BurKytLS8xdNnTUE4NDAtLC0rLS82RVPTuL6rq6ulq6mussHnWzo2MC0vLjA6QVvbwby2srayusHF51tFPDgyMC4uLisvLzA6RWfnuri0qa2pp6ursLjJ50k4Ni4uMC82Pkn/zb66sra2tr7ByedbST44NC8uLi0uLi8wNjxJ59u+sLSqqaulqquvtsXnUzg0LywvLzA8QVvbxby2srSwuLy82+dTPjwyLy4uLS4vLzY4PEVF/9vBwbKusqesqqmvr7jB51M+MjAtKy8uNj5N58m+uLKysrK6vs1nWz48NjAwLzAwNDg8RU1TZ2f//9vTycW8tryvsrKvtra+yf9NQTY0MC80NDxFU9vJwbq4uLi6xcnbU1NBPDw4ODg8PkFNU1v/////W1NNRU1TU2fTycW0urKvtrS6xdtnRTw4MjI2NDxFU+fNxb68vL6+ydPbW1NTRUlFQUlJTVNTU1tbU1NNRUU+PDw4PklTZ8m+vq+wr6ywsLjB22dFOjg0MDY2Pk1T283Fwb6+wcHJ29NnW2dFU01FU01NTU1NU1NJTU1FSUE+QTxBQUVn59u6vriutK6vsrS+yedbRTw8NDY6OEVNU+fb08nJycnN09Pn2////1P/W1NbTVNNTUlJSUVJRUVFQUVFRUlJW//nzb6+urC4sLK4uMHN51tFPjw2ODo6QUVNZ//b083JycnJzc3T29vn//9bW1NNTUVFRUVFRUVFSUlJTUlJTUVNU2fn58HFvrK6sLK4tr7F2/9NQT44ODg4PkFFW1vn09PNycnJxc3Tyefb51vnU01TRUVFQUFBQUFNRU1TSVNTTVNTTVv/59vBwb6yurKyura+ydtnTUE8ODY4Njw+RVNb59PTycnFxcXFzcXb29Nb51NNU0VFRUFFRUVFTU1NU01TU1NTU1NTU//n28XFxba8uLS8uL7J0/9NRUE6Ojo4PkFFU1v/09PJxcXFwcXFydPT2/9nU01NRUFBQUFBRUVJTVNTU1tbW1tbU1tTW//n58nFybjBuri+usHJ0/9TSUE+PDw8QUFFW1v/29PJycnJycnJ09vb//9nU1NNSUlFRUVFSUlNTVNTU1tbW2dbW1tbW1tn5//TydO+xb66wb7BydPnW1NJQT4+PEFBRVNT/9vb08nNycnJ09PT5+f/U/9NTU1FTUVFTUlNU1NTW1tb/1tb/1tbW1NbW2f/Z83bzb7Jur7BvMXJ0+dnU01BRUE+RUFNU1P/59vT09PT09PT29vb/+dnU2dTU1NJTU1NTU1NU1NTW1tbZ1tbZ1tbW1NbW///583bwcXFusW+wcnJ2/9bU0lFQT5FRUVTU1v/59vT09PTzdPT0+fb52f/U1tTTVNNTU1NTU1TU1tbW2dbW2dbZ1tbW1tb////09PTwcnBvsW+xc3T5/9bTUVFRUFFRUlTU///59vb09PT09Pb29v/52dbZ1NTU01NTU1NTU1TU1NbW1tnW2dnW1tbW1tbW////83nycXNvsXFwc3N2/9bU01FRUFFRUVTU1v//9vb29PT09Pb29vn//9nW1tTU1NNTU1NU1NTU1NbW1tnZ2dnZ1tbW1tbW2f//9vT28XNxb7JwcXNzdv/Z1NNSUVFSUVNU1Nn/+fb29PT09PT29vb////W2dTU1NNU1NTU1NTU1tbW1tbZ2dnZ2dnW1tbW1tb///n09vJxc3BycXF083b/2dbTUlJRUlJSVNTW///29vb09PT09vb5+f//2dbW1NTU1NTU1NTU1NbW1tbW2dnZ2dnZ2dbW1tbW2f//+fT28nJycHJxcnT0+f/W1NNSUlFSU1NW1v//+fb29vb29vb2+fn/2dnW1tbU1NTU1NTU1NbW1tbW1tbW2dbZ1tnZ1tnW1tnW//n/9vT28nNycXNyc3T2+dnW1NNTUlJTU1TW1v/5+fb29vb29vn5+f/Z2dbW1tbW1tbW1tbW1tbW1tbW1tnZ2f/Z///Z/9nZ/9n/2f////n59Pbzc3Nyc3T09vn/2dbU1NTTVNTW1tn/+fn59vb59vn5+f/Z2dbW1tbW1tbW1tbW1tbW1tbZ1tnZ2f/////////////////////////5+fb29vb09Pb29vb2+f//2dbW1tbU1tbW1tnZ2f/////Z2dnW1tbW1tbW1tbZ2dnZ/////////9n/////////////////////////////////+fn/+fn/+f///9nZ2dbW1tbZ1tbZ2dn/2f///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9nZ/9n//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9n////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////W0k4U9s8Sbymo7D/PlNbLhwbKLCaryMZHziclq8yIDzBvDgwvpuZvB4ZJ7STncEcGi+8ods+SayuPBwdOJ6UpTgWITqcl7owJVPTRSEnyZmYuB4ZKLyTnL4eGzi+sDw8wZ6kPBodMp6UpDwWITqhnM04OLrBMBsizZiYsiAYKM2UnckhIEXT/yk2spmePBkcLqGUpT4XIDqqqU0+26m6Khkg55iYsiEXJ+eWnucoK+fnMB8urpaeSRgbLaWUpj4YIT60wTZFsJ6wKBggW5iYsCQXKFubplMwTbjnJxsrq5Wd/xkbLamUpkUdKVPJPipJpZipKBggTZiXrycXKf+itElFuKnbIRoqrJSd0xobLqyVqkUlOtP/KSJFn5amKhcgPpmWryoYK/+vWzj/pp/THhoosJSdzRobLrKatEUw07xFHx08npWmLhcgOpuXsi0dNufNLy7TnZrBHRoluJSdyRsaL7yi2z5Nrq48HBw4npWlMhYgOJ2YvDAnU9NFIifJmZm6HhgnvpScyR0bNsGyPDzJn6U6Gh0yn5SlOhcgOKKdzTg4vMkwHCLJmJi0HxgnzZWdzSEhRc3/KjaymZ48Gh0voZSlPBcgPKqpTT7bqborGiHbmJiwIRco25ae5ykt59syIC+slp5JGRwupJSlRRkiRbLBOEmwnrApGSBbmJivJBco/5umWzJNuOcoGyurlZ1bGRsuqJSmRR0pU8k8KkmlmKooGCBNmJevJxcpW6O4RUW6quchGimulJ3bGhstrJWqPiQ621spIkWflqgqFyA+mZewKRgr/69bOP+mn9MeGiiwlJ3NGhsuspq0RTDTvEUfHT6elaUuFyA8m5eyLR02580vLs2dmsEdGie0lJzJHBswuqLTRU2srjwcHTielKUyFiA6nZi6MCdT00UiJ8mZmboeGSe+lJ3JHRs2wbI8PMGfpToaHTKflKU4FiA4op7TODi8yTAcIsmYmLQfGCfNlZ3NISFFzf8qNrKZnjwaHS+hlKU8FyA8qqlNPtOpuisaIduYmLAhFyjblp7nKS3n2zIgL6yWnkkZHC6kk56rLyUgHyMnMDpb27y6srSyuLq+ydPn/1NNSUlJSUlJSU1NU1NbW1v////////n5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+f//////////////////////////////////////1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW////////////////////////////////////////////////////////+fn5+fn////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////U0k6Nv9T/81J/1PNU1P//1Pb/83b29vbzdvN29vb29v/Sf/bU1PBU9vb/9v/2//b/9v/21P//1P//1P/U///U///////U////1P/U/////9TU1P/////2//b29tT/0lTU1P/U//////b/9v/29v/29v//////1P/U////9vb29vN/83/2///////29v/21Pb////////////////U///U/9T/1NT/////////1P///9T/1NT/////1P/U/////9T////U9tT/////9vb29v/29vb/83/2//b29vb29vb283N29v/U//bU83/zc3b2//////b21P//0lJSf//283b29v/////21NJOj5JPlPbU9vN/83/zdv///9T/////1P//1NT21Pb///////b2//b/1P/U1P/Sf9T/9v/////U/9T/1NTU1NTU1NTU1P/U0lTU0lTU/9TSVNTU///U/9TU1NJU1NTU///U///U1NT/1NTU1P////b29vN///////bU//b/9vb29vb/9tT2////9v/29vNzdvNzc3bzdvN/83b29vN29vb283/29vb29vb2//b//9T////U1PbU1Pb21Pb/9v//9vb/9vb29vb29vb/83/29vb/83/////2///U1NTU0lJU0lJSUlJPj5JPklJSUlJU0lJSUk+PklJSUlJU0lTU1NJU0lJSUn/U////1P/U1NT///b/83bzdvb283N283Nzc3Bwc3Nzc3bzc3BzcHBzc3BzdvN/83/29vN/83b29vbzdv//9v/2//b29vNzdvBzc3Nzc3N29vb/9v///////9T/1NJSUlJSUk+STpJPj4+Pj4+Oj4+Oj4+PklJSVNJSUk+SUk+U0lTU1P////bzdvb2///////U//////b283Nzc3b29vb/9v/2///2///29vb29vNzdvNzdvBzdvN29vb29vb/9v/////U1NTU1NT//9TU/9TU1NT///b29vBwcG8vLy8wcHNzdv/U0k+OjYwMC4uLi4uLjAwNjo+U1PbzcG4srKsqqqopaWlqqyvwf9JLikgHRwaGBobHiIrOlPBsqyopaWjo6OhoaGfo6ilqri82z4wJx4cGBYXFxodIik2U824rKiloZ+hn56em5uboZ+hr7i8STArIBwXGBgWGh0gJzA+/824r6+qqKWloZ+cmpmbnpujr7LNOisiHRgUFhYSGh4gKzpJ28Gyr6+qqKqlo6Gem5qfnJusr7JTMCseHBcUFhUUGx0iLjpTzby4sq+qrKylqKOfnJujnpuyr69TMC4gHRgWFxUWHB4iMD5Tzby4srKqrK+opaihnJuhn5qsr6rNNjAnHhoYGBUXHB4iLj5J27y4uLivr7KvqqqooZyfpZqhsqqySTouIh0YGxgVGx4dKTY6U828vLyysriyr6+sqKGeo6WapbKlskk+MCIeGhwYFRweHCs2Ov/NwbzBsri8srKyrKqlnp+lmp+vo6//UzYnIBscGhYbHhwpNjZTzcG8vLi4wbi4vK+sqJ+eo56aqqilvFNJKyQdGxwXFx4dHjA2PtvBwby8uLzBsry4r6+on56jnpqoqKW8U0krIh0bGxcXHR0eMDY628HBvLy4wcG4wbyyr6yhn6OhmqWqo7L/STAkHhobFxYcHh0uOjr/wcG8vLi8wbzBwbiyr6WhoaWbnqylqttJPicgHBsaFxogHSQ6OknBvLy4uLzNwbzNwbi4rKWfo6Oao6qjr1NTNiIeGxsYFxwgHis+Ov+8vLy4uLzNwcHbwby4rKWfo6GapaqjslNTMCIeGxsYGB0iIC5JPtu4vLy4uMHNzc3/28G8sqihoaOanKqhqNtTPiceHBsaFxsgICc+SVO4uLyyuLzNzc3//83BvKyloaOemaWoobhTUy4gHRsaGBgdIiI2U0nNsry4srjB29v/U//Nzbiqo5+hnJmlpaG4U1MrHhwaGBgYHSIiNlNTwa+4uLK8zdv/U0lT29u8rKWfoZ6Yoaihr1NJMB4cGxgYGhwiJDD//82vsriyuM3bU0k+PlP/27iqo5yem5ihpaO4ST4pHRsYFxgaHScnOtvbvKyyuLK8zf9JPjo6SVPbsqqhm5yblp+lo7g+OikcGhgXGBodJyk6zc28rK+4uLzbUz46NjY+U/+4qqOcmpyYmaWlqv82Lh4aGBcXGhskLjD/vLyvqrK4vM1TPjY2MDBJU9uyqJ+amZuYmaWor0kuKR0YGBcYGx0pNjrbuLivrLK8wf9JNi4wMDA+/82yqJ+alpmamJ+sr80uJyAaFxcaHB0kNkn/uK+yr6+8zf9JOi4rMC42U9u8rKOemZaZm5qhsrz/LiIeGxgYGx4iJzpT27yysrK4wdtJOjYuKy4wNlPNvKyln5uZmZyen6/N2zonIB0bGxweJCkwU9vNuLK4vM3bUzo2MC4rMDo+/8GyqqWfnJuanKOjqs1TPi4iIB4dHSAnLjA+283NvLzBzf9TPjYwMC4wNj5T28GyrKijoZ6cnKGoqLL/ST4uJCIgIiAiKTAwPv/bzcHBwdtTU0k2NjYwNjo+U9vNuK+sqKOhn56fpaqsvP9JNiskIiIiIicuNjpT283BwcHB21NJPjYwMDAwMDpJ/9vBuKyqqKOhn5+hpayvvP8+Ni4nJCIkJCcrNj5T28HBwcHN21NJPjYwLi4uMDY6U//NvLKvrKqoo6Oho6Oqr7jBUz42LikkJCQnKS46SVPbzcG8wc3N/0k6NjAuKy4wMDY+U//Nwbiyr6qoqKWjo6OlqrK4wVM+Ni4pJCQnKSsuOkn/28HBvMHN21NJOjYwLisuLjA2Pkn/zcG4sq+sqqilpaWjpaissrzNUzowKykkJCcpKy46Sf/bzcG8wc3b/0k+NjAuKysrLjA2Pkn/zby4sqyqqqioqKWlqKiqsrzN/z42LispJCQnKy42PlPNwby8vLzB2/9JPjYwKysrKy4wOj5T2828uLKvrKyqqqqqqqqqrK+4wdtTPjYuKykpKSkuMDpJ/83BvLy8vMHN/1M+OjAuLisrLjA2Pkn/28G8uLKysrKysrKyr6+vr6+yuMHN21M+NjAuKysrLjY6SVPbzcHBwcHBzf9TST42MC4uMDA2Nj5JU//bzcHBvLy8vLy8vLy4srKvr6yvuLzBzf9JOjAuLisrLjA6SVP/zcHBwcHNzf9TST46NjAwMDA2Oj5JU//b283NwcHBwcHBvLy8uLKvrKysrLK4wc1TPjYwKyspKy4wOj5T283BwcHBzc3bU0k+OjY2NjY2Ojo+SVP//9vbzc3Nzc3NwcHBvLiyr6+sqqqssrjB21M+Ni4rKSkrLjA6SVPbzcHBvMHN2/9TST46OjY6Ojo+PklJU///////29vb29vb283Bwbyyr6ysqqqssrzB21M+Ni4rKSsrLjA6Sf/bzcG8vMHBzf9TST4+Ojo6Oj4+SUlTU/////9TU1NT////283Nwby4r6yqqqqqrLK8zf9JOjAuKykrKy42Pkn/283BwcHBzdv/U0k+Pjo6Oj4+SUlTU1NTU1NTU0lJSVNT///bzby4sq+srKqqqqqvuMHbU0k6MCsrKSsuMDY+U//NwcHBwc3N2/9TST4+Pj4+PklTU1NTU1NTU0lJSUlJSVP/283BvLiyr6+sqqqqqq+4wdtTSTowLisrKy4wNj5J/83BwcHBzc3b/1NJST4+Pj5JSUlTU1NTU1NJSUlJSUlJU1P/2828uLKvrKyqqqiqrLK8zf9JOjYuKykrLjA2Pkn/zcHBvMHNzdv/U0k+Pj4+Pj5JSVNT//9TU0lJST4+Pj5JSVP/zcG8uLKvrKqqqKiqrLjB/1M+NjArKSkrLjY6SVPbzcG8vMHN2/9TST4+Ojo+PklJU1P/////U0lJPj4+Pj4+SVPbzcG8uLKvrKqqqKiqrLjB/1M+NjArKSkrLjY6SVPbzcG8vMHN2/9TST4+Ojo+SUlTU///////U0k+Pjo6Pj4+SVP/zcG8uLKvr6ysqqqqqq+4zf9JPjowLisrKy42Pkn/283BvLzBzdv/U0lJPj4+PklTU////////1NJPjo6Ojo+PklT/9vBvLi4srKyr6+vrKysr7jB/0k+OjYwLisrLjY+U//bzcHBvMHN2/9TSUk+Pj4+PklTU////1NTU0k+Ojo6Pj5JU1P/28G8uLi4uLiysrKvr6+vsrzN/0k+OjYwLisuMDpJ/9vNwcG8vMHN/1NJST4+Pjo+PklT/////1NTU0k+Pjo6PklTU//bzcG8uLi4uLi4uLKyr6+yuMH/ST46NjAuLi4wOklT283NwcHBwc3/U0k+Pjo6Oj4+SVP/////U1NJPj46Ojo+SVP/283Bwby4uLi4vLy4uLKyr6+yvM3/ST46NjAuLjA2PlPbzc3BwcHBzf9TST4+Pj4+PklT///b2///U0lJPj4+Pj5JU//bzcHBvLy8vLy8vLy8uLKyr7K4zf9JOjo2MC4uMDY+U9vNzcHBwc3b/0k+Pjo+Pj5JSVP/29v//1NJST46Ojo+SVP/283Bwby8vLzBwcHBvLy4uLKyr7K8zVM+OjYwMDAwNj5T/9vNzc3NzdtTST4+Pj4+SUlT//////9TSUk+Pjo6PklT/9vbzcHBwcHBzc3NwcHBvLy4srKyuLzB21M+OjYwMDY6PklT/9vb29v//1NJST4+SUlTU1P///9TU0lJPj4+PklJU//b283Nzc3Nzc3Nzc3NwcG8vLy4uLi8wcHN2/9TSUk+Pj4+PklJSVNTU1NJSUlJSUlJSUlTU1NTU1NTU0lJU1NTU////9vb283Nzc3Nzc3Nzc3BwcHBwcHNzc3b29vb29v/////////U1NTSUlJPj4+SUlJSUlJSUlJU1NTU1NTU1P/////29vb29vb29vb283Nzc3b29vb29vb29vb29vb29vb29vb////29v///////////////////9TU1NTU1NTU1NTU1NTU1P//1NTU///////////////////////////////////////////29v//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////1tJOFPbPEm8pqOw/z5TWy4cGyiwmq8jGR84nJavMiA8wbw4ML6bmbweGSe0k53BHBovvKHbPkmsrjwcHTielKU4FiE6nJe6MCVT00UhJ8mZmLgeGSi8k5y+Hhs4vrA8PMGepDwaHTKelKQ8FiE6oZzNODi6wTAbIs2YmLIgGCjNlJ3JISBF0/8pNrKZnjwZHC6hlKU+FyA6qqlNPtupuioZIOeYmLIhFyfnlp7nKCvn5zAfLq6WnkkYGy2llKY+GCE+tME2RbCesCgYIFuYmLAkFyhbm6ZTME245ycbK6uVnf8ZGy2plKZFHSlTyT4qSaWYqSgYIE2Yl68nFyn/orRJRbip2yEaKqyUndMaGy6slapFJTrT/ykiRZ+WpioXID6Zlq8qGCv/r1s4/6af0x4aKLCUnc0aGy6ymrRFMNO8RR8dPJ6Vpi4XIDqbl7ItHTbnzS8u052awR0aJbiUnckbGi+8ots+Ta6uPBwcOJ6VpTIWIDidmLwwJ1PTRSInyZmZuh4YJ76UnMkdGzbBsjw8yZ+lOhodMp+UpToXIDiinc04OLzJMBwiyZiYtB8YJ82Vnc0hIUXN/yo2spmePBodL6GUpTwXIDyqqU0+26m6Kxoh25iYsCEXKNuWnucpLefbMiAvrJaeSRkcLqSUpUUZIkWywThJsJ6wKRkgW5iYryQXKP+bplsyTbjnKBsrq5WdWxkbLqiUpkUdKVPJPCpJpZiqKBggTZiXrycXKVujuEVFuqrnIRoprpSd2xobLayVqj4kOttbKSJFn5aoKhcgPpmXsCkYK/+vWzj/pp/THhoosJSdzRobLrKatEUw07xFHx0+npWlLhcgPJuXsi0dNufNLy7NnZrBHRontJScyRwbMLqi00VNrK48HB04npSlMhYgOp2YujAnU9NFIifJmZm6HhknvpSdyR0bNsGyPDzBn6U6Gh0yn5SlOBYgOKKe0zg4vMkwHCLJmJi0HxgnzZWdzSEhRc3/KjaymZ48Gh0voZSlPBcgPKqpTT7TqborGiHbmJiwIRco25ae5ykt59syIC+slp5JGRwupJOeqy8lIB8jJzA6W9u8urK0sri6vsnT5/9TTUlJSUlJSUlNTVNTW1tb////////5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn//////////////////////////////////////9bW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1v////////////////////////////////////////////////////////n5+fn5///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Z2dnZ2dn//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9n/////////////////////////////////////////////////////////9vn29Pbzc3FxcXFzdPnZ01BOjItKCQjJCgkMjo4tsmppZ+dnJuhnayvxVM8MisoKygtMjhJ/9vFxdPbU0E2LywrKyc6K1Pbzaqsn6OcpJ+msLDb/0E8MDgyNjw4Pjw8NjAsJiYlKCQvNjK206WhnJmXlpyZp6jBUzIrIiAhHignLzY8QU1BPDgyODItUy9nxdOnqZ2el52anaenxec4LyQoICQoKC8yNjw+NDYtLi8tKkkr/83JpqecnZSblpuhpbjbPC8iJx4hIiMoLS00NDAyLC80LTJTL7zNtKSinJuWnJafo6vFTTgpIiUdJCMmLTAwPjY2NCwyMis0RS6+27SlopyZlpuWn6GrwVM2KSMkHSMiJiwuMDoyNDAqMC8rNEEvvtOyoqCamJWalZ6fqcVTNCchIhwiICQsLTI8NjY0KzAvKzBBLc3NvqOjm5mVmZSbn6S+2zopIyIcICAiKywvOjY2NiovLywrQS1TxdulpZuak5iUmJ6ftM08LiAjHB4gICksLzg+NEEtLjIsKzgyNsFbrKWfmpaWlpWdnazFUzIlIh4cIR4mLC02PDY8NCs0LSwuPC3n28WjpZqYlJeUmp6juts4KSIgGx8eIiorMDw6OD4sMjIrLTgwPMVbqaeemZWWlJaenrDFRS4kIh0dHx8oKy44PDY+MCs2LSkyMi3bU7qnpJuXlZeTnJyluts2KCIfHCAeIysrMj44PDwsMjIrLTgsQdtbqamempWXlJidnrLBRS4lIh0eICApKy88PDpBMC42LCwyNC7TSbanpZqYlZeUnZ2ovuc0KCQeHSAfJSwsNj44QTYtMjApLzYsTWf/qamemZaXlJmdn7TFSSsmIhwgHiIpLS9BPD5JMDI0Lis0Li//QbisppyYl5aVnJyotts8KScfHiIeKCowNkk8ST4wMjItKzYrOFNJsq6hnJeXlZecnqy6WzQoJR4fICApLDI8SUlJQTIyMiwrMisyUz6yr6KcmJeVl52drrhTNicmHh8gICosNjxNTVNFOjIyLSguKytFPMWwpp6Yl5aVnJyotOc8KiYfHiAgJi0yPk1T/0lJMjIvKyYvJy9JPrKtoJyWmJWYnZ+uxVMvJiQdISAjKzA2U1Pn51NJMjAuKSYvJTZBU7CpnpqWmJSZnaKw00ksJiMdIiAlKzY8/1vT21NTMi8tKCItJSxNPLKsn5uWl5aXnp+wxUkvJCYdICIjLTI+W9vnwVtnPC4tKyQlLSM8Qduspp2ZlZiVnJ6nvP86KSQjHSUhKjA8SdPbycVT/zYvLCkjJSwkRUXNqaecmZaYlp6fq8VnNCokIx4mIys0PFvTzcnBW/86LiwmJiIoKC9TW62pnpqYmJiaoaa80zovJSUgIyYoNDhb/8nNxdP/TTYtKSYlIyorMufnq6edm5mZmpylqcX/Ni8mJiQkKys2PlPbycnJ02dJOi4qJyYlJi8uSc2+pqSdnJqcnKOptNtNMC0mKCYrLTA+Rf/byc3N/2dFOC8pKCgnKDIwScXFp6eenZydn6OtsP9bNi8sKysrMDJBRVvn29Pb/1NJPDQtKiorKS46Ns3NtKennp+dop+srLznUzY2LS8tMDA2PkFbZ+fb//9nTUU8Mi4tLS0sOjZJxdOsrKSin6Gipa2uxc1NPDYwLi8vLzY4QUlT/+fb29tnZ0U8NC4vLSwuODL//76uraOjn6Ofqamwxc1FPDIvLC4sLzI2QUn/583Nzc3b/0k8NC4rLCgrMi5TU8WvraOhn6Gfp6iwwdNFOjAtKy0rLzA2QU3/zcnBvsXF0/9NPDItKCgpJS8uOtvnsKyloZ6fn6Gpq7zNUzwyLyssLCwyND5NW9PFxby+vsXb/0k4MConJiYlLS822/+vrKWgnp6foampvMVbPDQvKysrKzAyPElb28XBuLi8vMnbZ0E2LSgmIiUlKDIyZ826qaefn52fn6WpsMXbQTgwLSotKy8yNklb28W+vLS6ur7N/004MislJCAkJicyOEm+vqmmoJ6dnp+hq6zBzUk8MC4rKy0rNDRBTf/Nwby4uLi6xc1nSTwvLCYkIiAkJisvSU26tKuhop2enZ+gqay621M4MC0rKCwqLzQ8SWfbwb64tLi4vs3nSTwyKygjIiEgJCguNFvbuKupn56cnJyen6eutttTOC8rKSYoKSsyNkVn08W4uLK0trjF21M+NC0oJiIiIiImKDA8TcW4raOjnZycm52fpau4xUU6LSgmJCQmKCw2PFvTxbi0sLC0trzN/0k6MiwoJiQkJScpLjI+Z8m8rKqln6Gdn56ho6uwwWdJLy0nJSQlJiwuOElnzb64srC0sLi8yf9TPjQvLCopKCssLzQ8RVvbxbi0r6qsqKeppayrr7TBzU0+Ni0tKissLjI6QVvbybq6tLS2tr6+0+dTRTw2Mi8wLzIyNjxBSVtT5+fbzc3FwbrBtLi0sLSwtrrFzWdTQTo4MjQ2NjxBTf/bzcHBvrrFusnFzf//SUk+PDY2MjY2Njw8QUFFRU1FU1P/282+vrS0r62urLCwuL7b/0k8OjQ0NDY8QUlb/9vNxcHBwb7NxdPn21NTRUE8OjY2NjY6OD4+QUVJSU1JU1P/29u+vriwsKysrayvtLrJ/1NBPDYyMjQ2Oj5BU1P/29vNycXFxcXJxdvT51tTSUU8PDo4Ojo8PD5BQUVFSUlNU1vb28W8uLKur6uura62uMnbU0U6NjIyNDI2PEFNW//TzcW+vr64vrq+xcXb21tJRTw4NjYyNjY2PDxBQUVJSVNJU0ln2+fFvr6wr7CprqyutLjB21tJODgyMDIyNjo8SVP/283Jvr6+uL66vsnF2/9TSUE8NjQyMjQ0Njw8QUlJTVNTU1NbW+fbycW2uLCur6mvrbK4vtNbRTwyMi8vMDI2PEFT/9vNxb66uLq4vL6+zc3/U01BPDo2NDY0Njo6QUFJU01TU1NTU1NTZ//Tzby8tq60rK+vsLi8zf9JQTYyMi8yMjY+RVPn08m+vrq4uri6vr7N0/9bSUE+Ojg2NjY2Ojw+QUlNU1NbW1tbU1tT/9vbzby+tK+0rLCvsLq+zf9JQTY0Mi80NjpFSWfbzcW+vry+vr7Fxcnn22dTU0VFQTw8PDw+PD5BQUVNSVNTU1NTU1NTTVPn59u+xbiwuK2ysrC6vs3/TUk2NjQwNjY6RUln283Fvr6+vsHBxc3N2///TVNJRUVBQUFBQUFBRUVJSUlNU01TU01TSU1NU//b277FurC4rbCwsLi+yedTSTo2NjI2NjpFSWfbzcnBxcHBxcXN29vn/2dnTVNNSVNJTU1JTUlFSUVFSUlJSUlNTUlNTU1TU//b277BvrC8r7C4sL7Bzf9TRTw2NjQ2PDxJU2fTzcXBwcHBycnN29v//1tnW1NbTVNTTVNNSUlJRUVFRUlJSU1JTVNNU1NTU2fb2826xbS0uK24tLbFxdtTST44NjY2PD5BW2fbycnBvsXFyc3T2////1NbW01bTVNTTVNNSU1JSUVFRUlJSU1NTVNTU1NTU2f/zdu+usWvurSwvLjBzdtnRUE8Njo6OkVJU+fbzcXFwcXNzdvn//9nU/9TW/9N/1NNZ0lTTUVJRUFFQUVJSU1TW1NbZ1NbU1NnZ9vTybjBtrK+sLq+vtP/W0U+Pjg6PD5FW1vbzc3FxcnJzdvb/1v/W1P/W1v/U1tTU1NJSUVBQUFBRUlJU1NbW/9nW2dbU2dTW/9n08nJurq8sry6us3J21tTSUFBQUFJU1vn29PNzc3J09vT///nW2f/U1tnU1NbSU1JQUlFRUlJTVNTZ1v//2f/2///21vn/1vn///n/9vT083FxcXBxcnF09vb//9nU1tbW2dn///n5//nZ1tnTVNNSVNNTVNTU1NTU1NTU1NTU1NTU/9b/+fn/+fnZ+fnZ9v//+f////n5//b52fb/2fbZ9vb59vb29vb5//b////W1tnU1tbZ2dn/2dnZ1tnW1tnW1tnW2dn/2dn/2dnZ1tbZ2dn//////////////////9n/2f//////////////////////////////////////////////////////+fn/+f/////////////////////////////////Z///////Z////////////2f/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Z2dnZ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////1tJOFPbPEm8pqOw/z5TWy4cGyiwmq8jGR84nJavMiA8wbw4ML6bmbweGSe0k53BHBovvKHbPkmsrjwcHTielKU4FiE6nJe6MCVT00UhJ8mZmLgeGSi8k5y+Hhs4vrA8PMGepDwaHTKelKQ8FiE6oZzNODi6wTAbIs2YmLIgGCjNlJ3JISBF0/8pNrKZnjwZHC6hlKU+FyA6qqlNPtupuioZIOeYmLIhFyfnlp7nKCvn5zAfLq6WnkkYGy2llKY+GCE+tME2RbCesCgYIFuYmLAkFyhbm6ZTME245ycbK6uVnf8ZGy2plKZFHSlTyT4qSaWYqSgYIE2Yl68nFyn/orRJRbip2yEaKqyUndMaGy6slapFJTrT/ykiRZ+WpioXID6Zlq8qGCv/r1s4/6af0x4aKLCUnc0aGy6ymrRFMNO8RR8dPJ6Vpi4XIDqbl7ItHTbnzS8u052awR0aJbiUnckbGi+8ots+Ta6uPBwcOJ6VpTIWIDidmLwwJ1PTRSInyZmZuh4YJ76UnMkdGzbBsjw8yZ+lOhodMp+UpToXIDiinc04OLzJMBwiyZiYtB8YJ82Vnc0hIUXN/yo2spmePBodL6GUpTwXIDyqqU0+26m6Kxoh25iYsCEXKNuWnucpLefbMiAvrJaeSRkcLqSUpUUZIkWywThJsJ6wKRkgW5iYryQXKP+bplsyTbjnKBsrq5WdWxkbLqiUpkUdKVPJPCpJpZiqKBggTZiXrycXKVujuEVFuqrnIRoprpSd2xobLayVqj4kOttbKSJFn5aoKhcgPpmXsCkYK/+vWzj/pp/THhoosJSdzRobLrKatEUw07xFHx0+npWlLhcgPJuXsi0dNufNLy7NnZrBHRontJScyRwbMLqi00VNrK48HB04npSlMhYgOp2YujAnU9NFIifJmZm6HhknvpSdyR0bNsGyPDzBn6U6Gh0yn5SlOBYgOKKe0zg4vMkwHCLJmJi0HxgnzZWdzSEhRc3/KjaymZ48Gh0voZSlPBcgPKqpTT7TqborGiHbmJiwIRco25ae5ykt59syIC+slp5JGRwupJOeqy8lIB8jJzA6W9u8urK0sri6vsnT5/9TTUlJSUlJSUlNTVNTW1tb////////5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn//////////////////////////////////////9bW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1v////////////////////////////////////////////////////////n5+fn5///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////"
+                        class="audio_captcha" crossorigin="anonymous"></audio>
+                      <div
+                        style="display: grid; place-items: center; font-size: 1em; color: rgb(8, 99, 150); cursor: pointer;">
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                          aria-hidden="true" viewBox="0 0 24 24" data-testid="AutorenewIcon">
+                          <path
+                            d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26">
+                          </path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div></div>
+                  <div class="aadhaar-form__button-container">
+                    <div style="display: flex;">
+                      <div class="aadhaar-form__button"><button type="button" class="button_btn__HeAxz"
+                          style="background-image: linear-gradient(to right, rgb(2, 13, 81), rgb(25, 176, 220)); color: white;">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form><br>
+              <div class="ltr">
+                <div class="request-body__main-container"></div>
+              </div>
+            </div>
+          </div>
+          <div class="aadhaar-screen__faq">
+            <div class="aadhaar-screen__Faq-title-container"><img
+                src="/static/media/faq-icon.2ec92ba82e3c3510425ffec418c95fb4.svg" alt="Frequently Asked Questions">
+              <div class="aadhaar-screen__Faq-title"><span>Frequently Asked Questions</span></div>
+            </div>
+            <div class="ltr">
+              <div class="accordion-container-shadow">
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="0">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">
+                            <div>What details can I update through Update Aadhaar online Service?</div>
+                          </div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">Through this online portal, you can perform only Address and Document
+                          update. For any other update, kindly visit the nearest Aadhaar Seva Kendra.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="1">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">Is there any fee involved for Online updation of Demographics details?
+                          </div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">Yes, for online update of demographic information you have to pay Rs.
+                          50/- (including GST).</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="2">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">How many times Aadhaar data can be updated?</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">
+                          <div>Following limits are applicable for the update of Aadhaar information:<ul
+                              class="faq__unordered-list">
+                              <li class="faq__list-items">Name: Twice in Life Time</li>
+                              <li class="faq__list-items">Gender: Once in Life Time</li>
+                              <li class="faq__list-items">Date of Birth: Once in life time</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="3">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">What changes can I do to my name in Aadhaar?</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">
+                          <div>For minor corrections in your name or change in name, kindly visit nearest Aadhaar Seva
+                            Kendra.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="4">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">What documents are required for Online Address Update?</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">
+                          <div>POA document as per supporting document list will be required. Visit <a class="hyperlink"
+                              href="https://uidai.gov.in/images/commdoc/List_of_Supporting_Document_for_Aadhaar_Enrolment_and_Update.pdf"
+                              target="_blank" rel="noreferrer">https://uidai.gov.in</a>.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="5">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">
+                            <div>Which are the documents required for updation in Aadhaar Address?</div>
+                          </div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">
+                          <div>List of supporting documents which you can select from is available <a class="hyperlink"
+                              href="https://uidai.gov.in/images/commdoc/List_of_Supporting_Document_for_Aadhaar_Enrolment_and_Update.pdf"
+                              target="_blank" rel="noreferrer">here</a>. Please select the appropriate document from the
+                            list and provide a scan/image of the same while undertaking demographic data correction.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="6">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">How can I submit my supporting documents in case of Address Update
+                            online Service?</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">You will be prompted to upload scan/image of the supporting document in
+                          pdf or jpeg format in the Update Address online Service. Please upload correct supporting
+                          document for processing of your request. For certain documents like Passport, Rent and
+                          Property agreement, image of multiple pages would be required.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="7">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">Can I update my local language through Update Aadhaar online Service?
+                          </div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">At present you can not update your local language through online
+                          portal. </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="8">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">Can I update my date of birth through Update Aadhaar online Service?
+                          </div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">No, to update Date of Birth (DoB) kindly visit nearest Aadhaar Seva
+                          Kendra with DoB proof document.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="9">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">I have already updated Date of Birth in my Aadhaar once. Can I update/
+                            correct it?</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">No. You can update your Date of Birth (DoB) only once. Further Date of
+                          Birth (DoB) can be changed under exceptional circumstances, kindly call 1947 in this regard.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="10">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">Does submission of request guarantee update of demographic information?
+                          </div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">Submission of information does not guarantee update of Aadhaar data.
+                          Changes submitted through Update Aadhaar online Service are subjected to verification and
+                          validation by the UIDAI and after validation only the change request is processed further for
+                          Aadhaar update.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="11">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">I have lost my mobile number/ do not possess the number that I enrolled
+                            with Aadhaar. How should I submit my update request?</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">In case you have lost/do not possess the mobile number anymore that is
+                          registered with Aadhaar, you have to personally visit the nearest Aadhaar Seva Kendra for
+                          updation of mobile number.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="12">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">Will my Aadhaar number get changed after updation?</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">No, your Aadhaar number will remain same even after the update.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="13">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">I want to cancel the update request. Will I be able to do it?</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">A resident can cancel the update request from the ‘Requests’ space in
+                          the myAadhaar dashboard until the request is picked up for further processing. If cancelled,
+                          the amount paid will be refunded to the account within 21 days.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="14">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">Where can I see all my update requests?&nbsp;</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">A resident can view his/her update requests inside the ‘Requests’ space
+                          inside the myAadhaar dashboard.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="15">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">How do I add my father’s / husband’s name to my address?</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">Relationship details are a part of address field in Aadhaar. This has
+                          been standardized to C/o (Care of). Filling this is optional.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <div class="accordion-shadow">
+                    <div class="accordion-shadow__title" id="16">
+                      <div class="title">
+                        <div class="ltr">
+                          <div class="faq-title">My update request got rejected for invalid documents. What does this
+                            mean?</div>
+                        </div>
+                      </div><img class="toggle-image" src="/static/media/ArrowDown.a5229ab197c918ede75c7ae811502301.svg"
+                        alt="Arrow Down" style="transform: rotate(0deg);">
+                    </div>
+                    <div class="accordion-shadow__panel" style="max-height: 0px; transition: max-height 0.2s ease-out;">
+                      <div class="ltr">
+                        <div class="faq-content">
+                          <div>The document you use for Online Address Update should be:<ul class="faq__unordered-list">
+                              <li class="faq__list-items"><span>Valid document as per&nbsp;<a class="hyperlink"
+                                    href="https://uidai.gov.in/images/commdoc/List_of_Supporting_Document_for_Aadhaar_Enrolment_and_Update.pdf"
+                                    target="_blank" rel="noreferrer">https://uidai.gov.in</a>.</span></li>
+                              <li class="faq__list-items">The document uploaded is in the name of the resident.</li>
+                              <li class="faq__list-items">Image uploaded should be clear and colored scan of original
+                                document.</li>
+                            </ul>Ensure that you follow the above before you create a new update request.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="root-loader"></div><date-input-polyfill class="date-input-polyfill" data-open="false">
+    <div class="date-select-header"><button class="date-header-button inactive"></button></div>
+    <div class="day-matrix-wrapper">
+      <table>
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="date-select-dropdown">
+      <div class="select-container">
+        <div class="select-wrapper month-select"></div>
+        <div class="select-wrapper year-select"><button class="control up"></button>
+          <div class="option-wrapper">
+            <div class="option"></div>
+            <div class="option"></div>
+            <div class="option"></div>
+            <div class="option"></div>
+            <div class="option"></div>
+          </div><button class="control down"></button>
+        </div>
+      </div>
+    </div>
+  </date-input-polyfill>
+</body>
+
+</html>
