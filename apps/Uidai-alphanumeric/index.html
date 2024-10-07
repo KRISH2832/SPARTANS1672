@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Captcha Demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="disclaimer">
+        <h1><strong>DISCLAIMER:</strong> SPARTANS 1672 TESTING</h1>
+        <p><strong>This web form is not intended to mock or replicate the official Unique Identification Authority of India (UIDAI) website. It is created solely for the purpose of testing machine learning solutions that may be used to enhance or replace captcha solutions/challenges. The form's design and functionality are for experimental use only.</strong></p>
+        <p>This version of the form uses traditional 4 letter numeric CAPTCHA.</p>
+    </div>
+    <div class="container">
+        <h1>TEST FORM</h1>
+        <form method="POST" id="aadhaar-form">
+            
+            <div class="form-group">
+                <label for="name">Enter Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+              
+            <div class="form-group">
+                <label for="mobile">Enter Mobile Number</label>
+                <input type="number" id="mobile" name="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <label for="captcha">Enter Captcha</label>	               
+                <input type="text" id="captcha" name="captcha" required>	
+                <div id="captcha-image">	
+                    <!-- Image element to display the CAPTCHA -->
+                    <img id="captcha-img" alt="CAPTCHA Image" />
+                </div>
+                <button type="button" id="reload-captcha" onclick="fetchCaptcha()">Reload</button>
+            </div>
+            <button type="submit" id="send-otp" onclick="validateCaptcha(event)">SUBMIT</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
